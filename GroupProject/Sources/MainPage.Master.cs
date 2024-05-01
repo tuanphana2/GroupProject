@@ -15,14 +15,14 @@ namespace GroupProject.Sources
 
         }
 
-        protected void LinkTrangChu_Click(object sender, EventArgs e)
+        protected void LinkHomePage_Click(object sender, EventArgs e)
         {
-            Server.Transfer("HomePage.aspx");
+            Server.Transfer("~/Sources/HomePage.aspx");
         }
 
-        protected void LinkQuanLyNhanVien_Click(object sender, EventArgs e)
+        protected void LinkManageStaff_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Sources/ManageStaff/ManageStaff.aspx");
         }
 
         protected void LinkQuanLySanPham_Click(object sender, EventArgs e)
@@ -51,6 +51,16 @@ namespace GroupProject.Sources
         }
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void LinkDangNhap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void LinkDangKy_Click(object sender, EventArgs e)
         {
 
         }

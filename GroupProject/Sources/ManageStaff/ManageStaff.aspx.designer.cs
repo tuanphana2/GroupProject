@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GroupProject.ManageStaff
+namespace GroupProject.Sources.ManageStaff
 {
 
 
-    public partial class QLNV
+    public partial class ManageStaff
     {
 
         /// <summary>

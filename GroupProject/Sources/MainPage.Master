@@ -21,10 +21,10 @@
                 <td style="width: 2%"></td>
                 <td style="width: 8%"><asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/Hinhanh/logo.jpg" Height="60px"/></td>
                 <td style="width: 6%">
-                    <asp:LinkButton ID="LinkTrangChu" runat="server" OnClick="LinkTrangChu_Click" Text="Trang chủ" ForeColor="white" Font-Underline="false"></asp:LinkButton>
+                    <asp:LinkButton ID="LinkHomePage" runat="server" OnClick="LinkHomePage_Click" Text="Home Page" ForeColor="white" Font-Underline="false"></asp:LinkButton>
                 </td>
                 <td style="width: 11%">
-                    <asp:LinkButton ID="LinkQuanLyNhanVien" runat="server" OnClick="LinkQuanLyNhanVien_Click" Text="Quản lý nhân viên" ForeColor="white" Font-Underline="false"></asp:LinkButton>
+                    <asp:LinkButton ID="LinkManageStaff" runat="server" OnClick="LinkManageStaff_Click" Text="Manage Staff" ForeColor="white" Font-Underline="false"></asp:LinkButton>
                 </td>
                 <td style="width: 11%">
                     <asp:LinkButton ID="LinkQuanLySanPham" runat="server" OnClick="LinkQuanLySanPham_Click" Text="Quản lý sản phẩm" ForeColor="white" Font-Underline="false"></asp:LinkButton>

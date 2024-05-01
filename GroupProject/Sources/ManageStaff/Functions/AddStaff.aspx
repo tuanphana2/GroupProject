@@ -25,40 +25,43 @@
                 <asp:TextBox runat="server" ID="txt_SSN"></asp:TextBox>
                 <br />
                 <asp:Label runat="server" Text="Drivers lisence"></asp:Label>
+                <asp:TextBox runat="server" ID="txt_DL"></asp:TextBox>
                 <br />
                 <asp:Label runat="server" Text="Address 1"></asp:Label>
+                <asp:TextBox runat="server" ID="txt_Adr1"></asp:TextBox>
                 <br />
                 <asp:Label runat="server" Text="Address 2"></asp:Label>
+                <asp:TextBox runat="server" ID="txt_Adr2"></asp:TextBox>
                 <br />
                 <asp:Label runat="server" Text="City"></asp:Label>
+                <asp:TextBox runat="server" ID="txt_City"></asp:TextBox>
                 <br />
                 <asp:Label runat="server" Text="Country"></asp:Label>
+                <asp:TextBox runat="server" ID="txt_Country"></asp:TextBox>
                 <br />
                 <asp:Label runat="server" Text="Zip"></asp:Label>
+                <asp:TextBox runat="server" ID="txt_Zip"></asp:TextBox>
                 <br />
                 <asp:Label runat="server" Text="Gender"></asp:Label>
+                <asp:TextBox runat="server" ID="txt_Gender"></asp:TextBox>
                 <br />
                 <asp:Label runat="server" Text="Phone number"></asp:Label>
+                <asp:TextBox runat="server" ID="txt_Phone"></asp:TextBox>
                 <br />
                 <asp:Label runat="server" Text="Email"></asp:Label>
+                <asp:TextBox runat="server" ID="txt_Email"></asp:TextBox>
                 <br />
                 <asp:Label runat="server" Text="Marital status"></asp:Label>
+                <asp:TextBox runat="server" ID="txt_MS"></asp:TextBox>
                 <br />
                 <asp:Label runat="server" Text="Ethnicity"></asp:Label>
+                <asp:TextBox runat="server" ID="txt_Ethnicity"></asp:TextBox>
             </td>
-            <td>&nbsp;</td>
-
         </tr>
         <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td>
+                <asp:Button ID ="bt_Add" runat="server" Text="Add" OnClick="bt_Add_Click" />
+            </td>
         </tr>
     </table>
-
 </asp:Content>

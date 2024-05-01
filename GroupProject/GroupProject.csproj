@@ -119,10 +119,11 @@
     <Content Include="Sources\BKL.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Sources\HomePage.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\AddStaff.aspx" />
+    <Content Include="Sources\ManageStaff\ManageStaff.aspx" />
     <Content Include="Sources\QLDH.aspx" />
     <Content Include="Sources\QLKH.aspx" />
     <Content Include="Sources\QLNB.aspx" />
-    <Content Include="Sources\ManageStaff\QLNV.aspx" />
     <Content Include="Sources\QLSP.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -163,6 +164,20 @@
       <DependentUpon>MainPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sources\ManageStaff\Functions\AddStaff.aspx.cs">
+      <DependentUpon>AddStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\AddStaff.aspx.designer.cs">
+      <DependentUpon>AddStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\ManageStaff.aspx.cs">
+      <DependentUpon>ManageStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\ManageStaff.aspx.designer.cs">
+      <DependentUpon>ManageStaff.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sources\QLDH.aspx.cs">
       <DependentUpon>QLDH.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -183,13 +198,6 @@
     </Compile>
     <Compile Include="Sources\QLNB.aspx.designer.cs">
       <DependentUpon>QLNB.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Sources\ManageStaff\QLNV.aspx.cs">
-      <DependentUpon>QLNV.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Sources\ManageStaff\QLNV.aspx.designer.cs">
-      <DependentUpon>QLNV.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sources\QLSP.aspx.cs">
       <DependentUpon>QLSP.aspx</DependentUpon>

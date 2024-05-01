@@ -13,5 +13,10 @@ namespace GroupProject.Sources.ManageStaff.Functions
         {
 
         }
+
+        protected void bt_Add_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
