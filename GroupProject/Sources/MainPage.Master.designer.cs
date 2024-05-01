@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GroupProject
+namespace GroupProject.Sources
 {
 
 

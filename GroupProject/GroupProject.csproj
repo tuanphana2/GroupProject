@@ -115,84 +115,94 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BCDT.aspx" />
-    <Content Include="BKL.aspx" />
+    <Content Include="Sources\BCDT.aspx" />
+    <Content Include="Sources\BKL.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="QLDH.aspx" />
-    <Content Include="QLKH.aspx" />
-    <Content Include="QLNB.aspx" />
-    <Content Include="QLNV.aspx" />
-    <Content Include="QLSP.aspx" />
+    <Content Include="Sources\HomePage.aspx" />
+    <Content Include="Sources\QLDH.aspx" />
+    <Content Include="Sources\QLKH.aspx" />
+    <Content Include="Sources\QLNB.aspx" />
+    <Content Include="Sources\ManageStaff\QLNV.aspx" />
+    <Content Include="Sources\QLSP.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BCDT.aspx.cs">
+    <Compile Include="Sources\BCDT.aspx.cs">
       <DependentUpon>BCDT.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BCDT.aspx.designer.cs">
+    <Compile Include="Sources\BCDT.aspx.designer.cs">
       <DependentUpon>BCDT.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BKL.aspx.cs">
+    <Compile Include="Sources\BKL.aspx.cs">
       <DependentUpon>BKL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BKL.aspx.designer.cs">
+    <Compile Include="Sources\BKL.aspx.designer.cs">
       <DependentUpon>BKL.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ClassConnectSQLSV.cs">
+    <Compile Include="Sources\ConnectDB\ClassConnectSQLSV.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ConnectMySQL.cs" />
+    <Compile Include="Sources\ConnectDB\ConnectMySQL.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.Master.cs">
+    <Compile Include="Sources\HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\MainPage.Master.cs">
       <DependentUpon>MainPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MainPage.Master.designer.cs">
+    <Compile Include="Sources\MainPage.Master.designer.cs">
       <DependentUpon>MainPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLDH.aspx.cs">
+    <Compile Include="Sources\QLDH.aspx.cs">
       <DependentUpon>QLDH.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="QLDH.aspx.designer.cs">
+    <Compile Include="Sources\QLDH.aspx.designer.cs">
       <DependentUpon>QLDH.aspx</DependentUpon>
     </Compile>
-    <Compile Include="QLKH.aspx.cs">
+    <Compile Include="Sources\QLKH.aspx.cs">
       <DependentUpon>QLKH.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="QLKH.aspx.designer.cs">
+    <Compile Include="Sources\QLKH.aspx.designer.cs">
       <DependentUpon>QLKH.aspx</DependentUpon>
     </Compile>
-    <Compile Include="QLNB.aspx.cs">
+    <Compile Include="Sources\QLNB.aspx.cs">
       <DependentUpon>QLNB.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="QLNB.aspx.designer.cs">
+    <Compile Include="Sources\QLNB.aspx.designer.cs">
       <DependentUpon>QLNB.aspx</DependentUpon>
     </Compile>
-    <Compile Include="QLNV.aspx.cs">
+    <Compile Include="Sources\ManageStaff\QLNV.aspx.cs">
       <DependentUpon>QLNV.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="QLNV.aspx.designer.cs">
+    <Compile Include="Sources\ManageStaff\QLNV.aspx.designer.cs">
       <DependentUpon>QLNV.aspx</DependentUpon>
     </Compile>
-    <Compile Include="QLSP.aspx.cs">
+    <Compile Include="Sources\QLSP.aspx.cs">
       <DependentUpon>QLSP.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="QLSP.aspx.designer.cs">
+    <Compile Include="Sources\QLSP.aspx.designer.cs">
       <DependentUpon>QLSP.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MainPage.Master" />
+    <Content Include="Sources\MainPage.Master" />
+    <Content Include="App_Data\HR_2024.bak" />
+    <Content Include="App_Data\SI Payroll DB.mwb.bak" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -202,8 +212,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Sources\ManageProduct\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

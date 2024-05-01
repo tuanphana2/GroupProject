@@ -11,7 +11,7 @@ namespace GroupProject
 {
 
 
-    public partial class QLNV
+    public partial class HomePage
     {
     }
 }
