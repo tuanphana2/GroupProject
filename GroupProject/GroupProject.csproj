@@ -120,6 +120,7 @@
     <Content Include="Global.asax" />
     <Content Include="Sources\HomePage.aspx" />
     <Content Include="Sources\ManageStaff\Functions\AddStaff.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\EditStaff.aspx" />
     <Content Include="Sources\ManageStaff\ManageStaff.aspx" />
     <Content Include="Sources\QLDH.aspx" />
     <Content Include="Sources\QLKH.aspx" />
@@ -170,6 +171,13 @@
     </Compile>
     <Compile Include="Sources\ManageStaff\Functions\AddStaff.aspx.designer.cs">
       <DependentUpon>AddStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\EditStaff.aspx.cs">
+      <DependentUpon>EditStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\EditStaff.aspx.designer.cs">
+      <DependentUpon>EditStaff.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sources\ManageStaff\ManageStaff.aspx.cs">
       <DependentUpon>ManageStaff.aspx</DependentUpon>
