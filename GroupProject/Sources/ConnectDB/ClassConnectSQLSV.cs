@@ -20,7 +20,7 @@ namespace GroupProject
         private void connect()
         {
             // Chuỗi kết nối chứa thông tin máy chủ, cơ sở dữ liệu, và các tùy chọn bảo mật
-            string sqlcn = "Data Source=TUAN\\SQLEXPRESS1; Initial Catalog=HRM; Integrated Security=True; Encrypt=True; Trust Server Certificate=True";
+            string sqlcn = "Data Source=DESKTOP-QPGP5Q7;Initial Catalog=HRM;Integrated Security=True;Trust Server Certificate=True";
             con = new SqlConnection(sqlcn); // Tạo kết nối với SQL Server
             con.Open(); // Mở kết nối
         }

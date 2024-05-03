@@ -219,6 +219,7 @@
     <Content Include="Sources\MainPage.Master" />
     <Content Include="App_Data\HR_2024.bak" />
     <Content Include="App_Data\SI Payroll DB.mwb.bak" />
+    <Content Include="App_Data\SI Payroll DB.mwb" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
