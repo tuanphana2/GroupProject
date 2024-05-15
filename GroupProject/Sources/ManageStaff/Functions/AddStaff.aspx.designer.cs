@@ -15,15 +15,6 @@ namespace GroupProject.Sources.ManageStaff.Functions
     {
 
         /// <summary>
-        /// txt_pID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_pID;
-
-        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -31,6 +22,15 @@ namespace GroupProject.Sources.ManageStaff.Functions
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
+
+        /// <summary>
+        /// txt_pID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_pID;
 
         /// <summary>
         /// txt_FN control.
@@ -175,6 +175,24 @@ namespace GroupProject.Sources.ManageStaff.Functions
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_Ethnicity;
+
+        /// <summary>
+        /// txt_Shareholder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_Shareholder;
+
+        /// <summary>
+        /// txt_Benefit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_Benefit;
 
         /// <summary>
         /// bt_Add control.

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Sources/MainPage.Master" AutoEventWireup="true" CodeBehind="EditStaff.aspx.cs" Inherits="GroupProject.Sources.ManageStaff.Functions.EditStaff" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Sources/MainPage.Master" AutoEventWireup="true" CodeBehind="ViewStaff.aspx.cs" Inherits="GroupProject.Sources.ManageStaff.Functions.ViewStaff" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

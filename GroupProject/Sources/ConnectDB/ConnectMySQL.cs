@@ -6,7 +6,7 @@ using System.Web; // Không gian tên cho ứng dụng web
 using System.Web.UI; // Không gian tên cho các trang web dạng ASP.NET
 using MySql.Data.MySqlClient; // Không gian tên cho kết nối MySQL
 
-namespace GroupProject
+namespace GroupProject.Sources.ConnectDB
 {
     // Lớp quản lý kết nối với cơ sở dữ liệu MySQL
     public class ConnectMySQL

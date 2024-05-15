@@ -11,7 +11,7 @@ namespace GroupProject.Sources.ManageStaff.Functions
 {
 
 
-    public partial class EditStaff
+    public partial class ViewStaff
     {
 
         /// <summary>

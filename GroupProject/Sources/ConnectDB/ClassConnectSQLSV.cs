@@ -8,7 +8,7 @@ using System.Web.UI; // Không gian tên cho các trang web dạng ASP.NET
 using System.Web.UI.WebControls; // Không gian tên cho các điều khiển trên trang web
 using Org.BouncyCastle.Tls; // Không gian tên cho các chức năng liên quan đến mã hóa
 
-namespace GroupProject
+namespace GroupProject.Sources.ConnectDB
 {
     // Lớp này quản lý kết nối với cơ sở dữ liệu SQL Server và tương tác với nó
     public class ClassConnectSQLSV : System.Web.UI.Page
@@ -17,19 +17,19 @@ namespace GroupProject
         SqlConnection con;
 
         // Mở kết nối với SQL Server
-        private void connect()
+        private void Connect()
         {
             // Chuỗi kết nối chứa thông tin máy chủ, cơ sở dữ liệu, và các tùy chọn bảo mật
-            string sqlcn = "Data Source=TUAN\\SQLEXPRESS1; Initial Catalog=HRM; Integrated Security=True; Encrypt=True; Trust Server Certificate=True";
+            string sqlcn = "Data Source=TUAN\\SQLEXPRESS1;Initial Catalog=HRM;Integrated Security=True";
             con = new SqlConnection(sqlcn); // Tạo kết nối với SQL Server
             con.Open(); // Mở kết nối
         }
 
         // Đóng kết nối với SQL Server
-        private void disConnect()
+        private void DisConnect()
         {
             // Chỉ đóng kết nối nếu nó đang mở
-            if (con.State == ConnectionState.Open)
+            if (con != null && con.State == ConnectionState.Open)
                 con.Close(); // Đóng kết nối
         }
 
@@ -39,7 +39,7 @@ namespace GroupProject
             DataTable dt = new DataTable(); // Tạo DataTable rỗng để chứa dữ liệu
             try
             {
-                connect(); // Mở kết nối với SQL Server
+                Connect(); // Mở kết nối với SQL Server
                 SqlDataAdapter da = new SqlDataAdapter(sql, con); // Tạo bộ điều hợp dữ liệu
                 da.Fill(dt); // Đổ dữ liệu từ truy vấn SQL vào DataTable
             }
@@ -50,18 +50,18 @@ namespace GroupProject
             }
             finally
             {
-                disConnect(); // Đóng kết nối sau khi thực hiện xong
+                DisConnect(); // Đóng kết nối sau khi thực hiện xong
             }
             return dt; // Trả về DataTable chứa kết quả truy vấn
         }
 
         // Thực hiện lệnh SQL như INSERT, UPDATE, hoặc DELETE và trả về số hàng bị ảnh hưởng
-        public int CapNhat(string sql)
+        public int ExecuteQuery(string sql)
         {
             int ketqua = 0; // Biến lưu trữ số hàng bị ảnh hưởng
             try
             {
-                connect(); // Mở kết nối với SQL Server
+                Connect(); // Mở kết nối với SQL Server
                 SqlCommand cmd = new SqlCommand(sql, con); // Tạo lệnh SQL
                 ketqua = cmd.ExecuteNonQuery(); // Thực hiện lệnh SQL và trả về số hàng bị ảnh hưởng
             }
@@ -72,7 +72,7 @@ namespace GroupProject
             }
             finally
             {
-                disConnect(); // Đóng kết nối sau khi thực hiện xong
+                DisConnect(); // Đóng kết nối sau khi thực hiện xong
             }
             return ketqua; // Trả về số hàng bị ảnh hưởng
         }
@@ -83,7 +83,7 @@ namespace GroupProject
             string ketqua = ""; // Biến lưu trữ giá trị chuỗi
             try
             {
-                connect(); // Mở kết nối với SQL Server
+                Connect(); // Mở kết nối với SQL Server
                 SqlCommand cmd = new SqlCommand(sql, con); // Tạo lệnh SQL
                 ketqua = (string)cmd.ExecuteScalar(); // Thực hiện lệnh và trả về giá trị chuỗi
             }
@@ -94,7 +94,7 @@ namespace GroupProject
             }
             finally
             {
-                disConnect(); // Đóng kết nối sau khi thực hiện xong
+                DisConnect(); // Đóng kết nối sau khi thực hiện xong
             }
             return ketqua; // Trả về giá trị chuỗi
         }
@@ -105,7 +105,7 @@ namespace GroupProject
             float ketqua = 0; // Biến lưu giá trị số
             try
             {
-                connect(); // Mở kết nối với SQL Server
+                Connect(); // Mở kết nối với SQL Server
                 SqlCommand cmd = new SqlCommand(sql, con); // Tạo lệnh SQL
                 ketqua = Convert.ToSingle(cmd.ExecuteScalar()); // Thực hiện lệnh và trả về giá trị dưới dạng float
             }
@@ -116,7 +116,7 @@ namespace GroupProject
             }
             finally
             {
-                disConnect(); // Đóng kết nối sau khi thực hiện xong
+                DisConnect(); // Đóng kết nối sau khi thực hiện xong
             }
             return ketqua; // Trả về giá trị float
         }

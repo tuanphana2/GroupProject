@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Org.BouncyCastle.Pqc.Crypto.Lms;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,6 +12,7 @@ namespace GroupProject.Sources.ManageStaff.Functions
 {
     public partial class AddStaff : System.Web.UI.Page
     {
+        GroupProject.Sources.ConnectDB.ClassConnectSQLSV connect = new GroupProject.Sources.ConnectDB.ClassConnectSQLSV(); // Tạo một thể hiện của lớp kết nối
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -16,18 +20,44 @@ namespace GroupProject.Sources.ManageStaff.Functions
 
         protected void bt_Add_Click(object sender, EventArgs e)
         {
+            string pID = txt_pID.Text + "", fN = txt_FN.Text + "", lN = txt_LN.Text + "", mN = txt_MN.Text + "", sSN = txt_SSN.Text + "", dL = txt_DL.Text + "";
+            string adr1 = txt_Adr1.Text + "", adr2 = txt_Adr2.Text + "", city = txt_City.Text + "", country = txt_Country.Text + "", zip = txt_Zip.Text + "";
+            string gender = txt_Gender.Text + "", phone = txt_Phone.Text + "", email = txt_Email.Text + "", ms = txt_MS.Text + "";
+            string eth = txt_Ethnicity.Text + "", shs = txt_Shareholder.Text + "", bpid = txt_Benefit.Text + "";
+
+            // Lấy giá trị từ TextBox
+            string rawDate = datePicker.Text;
+
+            // Cố gắng chuyển đổi chuỗi ngày tháng thành DateTime
+            DateTime parsedDate;
+            bool isParsed = DateTime.TryParseExact(
+                rawDate,
+                "yyyy-MM-dd",
+                CultureInfo.InvariantCulture,
+                DateTimeStyles.None,
+                out parsedDate
+            );
+            string formattedDate="";
+            if (isParsed)
+            {
+                // Định dạng lại DateTime thành chuỗi "yyyy-MM-dd"
+                formattedDate = parsedDate.ToString("yyyy-MM-dd");
+            }
+            else
+            {
+                // Xử lý trường hợp không thể chuyển đổi ngày tháng
+                Response.Write("Ngày tháng không hợp lệ.");
+            }
             // Tạo truy vấn SQL để thêm một nhân viên mới
-            string sql = "INSERT INTO Staff VALUES ('"+txt_pID.Text+"', '"+txt_FN.Text+"', '"+txt_LN.Text+"'," +
-                "'"+txt_MN.Text+"', '"+datePicker.Text+"', '"+txt_SSN.Text+"', '"+txt_DL.Text+"', '"+txt_Adr1.Text+"'," +
-                "'"+txt_Adr2.Text+"', '"+txt_City.Text+"', '"+txt_Country.Text+"', '"+txt_Zip.Text+"', '"+txt_Gender.Text+"'," +
-                "'"+txt_Phone.Text+"', '"+txt_Email.Text+"', '"+txt_MS.Text+"', '"+txt_Ethnicity.Text+"')";
+            string sql = "INSERT INTO PERSONAL VALUES('" + pID + "', '" + fN + "', '" + lN + "', '" + mN + "', '" + formattedDate + "', '" + sSN +
+                "', '" + dL + "', '" + adr1 + "','" + adr2 + "', '" + city + "', '" + country + "', '" + zip + "', '" + gender + "', '" + phone +
+                "', '" + email + "', '" + ms + "', '" + eth + "', '" + shs + "', '" + bpid + "')";
 
             // Sử dụng lớp ClassConnectSQLSV để thực hiện truy vấn SQL
-            ClassConnectSQLSV sqlConnection = new ClassConnectSQLSV(); // Tạo một thể hiện của lớp kết nối
-            int rowsAffected = sqlConnection.CapNhat(sql); // Thực hiện câu lệnh SQL và lấy số hàng bị ảnh hưởng
+            int results = connect.ExecuteQuery(sql); // Thực hiện câu lệnh SQL và lấy số hàng bị ảnh hưởng
 
             // Phản hồi cho người dùng về kết quả của hành động
-            if (rowsAffected > 0) // Nếu có ít nhất một hàng bị ảnh hưởng, nghĩa là thêm thành công
+            if (results > 0) // Nếu có ít nhất một hàng bị ảnh hưởng, nghĩa là thêm thành công
             {
                 Response.Write("Staff added successfully.");
             }
