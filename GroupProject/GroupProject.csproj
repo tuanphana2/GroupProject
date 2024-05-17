@@ -115,36 +115,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Sources\BCDT.aspx" />
-    <Content Include="Sources\BKL.aspx" />
+    <Content Include="Display\css\AddStaffStyle.css" />
+    <Content Include="Display\css\MasterStyle.css" />
     <Content Include="Global.asax" />
     <Content Include="Sources\HomePage.aspx" />
-    <Content Include="Sources\ManageStaff\Functions\AddStaff.aspx" />
-    <Content Include="Sources\ManageStaff\Functions\EditStaff.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\BenefitPlan\AddBenefit.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\BenefitPlan\EditBenefit.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\Employee\AddEmployee.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\Employee\EditEmployee.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\JobHistory\AddJobHistory.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\JobHistory\EditJobHistory.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\PayRate\AddPayRate.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\PayRate\EditPayRate.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\Personal\AddStaff.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\Personal\EditStaff.aspx" />
     <Content Include="Sources\ManageStaff\Functions\InsertStaffIntoMySQL.aspx" />
-    <Content Include="Sources\ManageStaff\Functions\ViewStaff.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\Personal\ViewStaff.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\WorkingTime\AddWorkingTime.aspx" />
+    <Content Include="Sources\ManageStaff\Functions\WorkingTime\EditWorkingTime.aspx" />
     <Content Include="Sources\ManageStaff\ManageStaff.aspx" />
-    <Content Include="Sources\QLDH.aspx" />
-    <Content Include="Sources\QLKH.aspx" />
-    <Content Include="Sources\QLNB.aspx" />
-    <Content Include="Sources\QLSP.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sources\BCDT.aspx.cs">
-      <DependentUpon>BCDT.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Sources\BCDT.aspx.designer.cs">
-      <DependentUpon>BCDT.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Sources\BKL.aspx.cs">
-      <DependentUpon>BKL.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Sources\BKL.aspx.designer.cs">
-      <DependentUpon>BKL.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Sources\ConnectDB\ClassConnectSQLSV.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -167,18 +159,74 @@
       <DependentUpon>MainPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sources\ManageStaff\Functions\AddStaff.aspx.cs">
+    <Compile Include="Sources\ManageStaff\Functions\BenefitPlan\AddBenefit.aspx.cs">
+      <DependentUpon>AddBenefit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\BenefitPlan\AddBenefit.aspx.designer.cs">
+      <DependentUpon>AddBenefit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\BenefitPlan\EditBenefit.aspx.cs">
+      <DependentUpon>EditBenefit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\BenefitPlan\EditBenefit.aspx.designer.cs">
+      <DependentUpon>EditBenefit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\Employee\AddEmployee.aspx.cs">
+      <DependentUpon>AddEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\Employee\AddEmployee.aspx.designer.cs">
+      <DependentUpon>AddEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\Employee\EditEmployee.aspx.cs">
+      <DependentUpon>EditEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\Employee\EditEmployee.aspx.designer.cs">
+      <DependentUpon>EditEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\JobHistory\AddJobHistory.aspx.cs">
+      <DependentUpon>AddJobHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\JobHistory\AddJobHistory.aspx.designer.cs">
+      <DependentUpon>AddJobHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\JobHistory\EditJobHistory.aspx.cs">
+      <DependentUpon>EditJobHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\JobHistory\EditJobHistory.aspx.designer.cs">
+      <DependentUpon>EditJobHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\PayRate\AddPayRate.aspx.cs">
+      <DependentUpon>AddPayRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\PayRate\AddPayRate.aspx.designer.cs">
+      <DependentUpon>AddPayRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\PayRate\EditPayRate.aspx.cs">
+      <DependentUpon>EditPayRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\PayRate\EditPayRate.aspx.designer.cs">
+      <DependentUpon>EditPayRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\Personal\AddStaff.aspx.cs">
       <DependentUpon>AddStaff.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sources\ManageStaff\Functions\AddStaff.aspx.designer.cs">
+    <Compile Include="Sources\ManageStaff\Functions\Personal\AddStaff.aspx.designer.cs">
       <DependentUpon>AddStaff.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sources\ManageStaff\Functions\EditStaff.aspx.cs">
+    <Compile Include="Sources\ManageStaff\Functions\Personal\EditStaff.aspx.cs">
       <DependentUpon>EditStaff.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sources\ManageStaff\Functions\EditStaff.aspx.designer.cs">
+    <Compile Include="Sources\ManageStaff\Functions\Personal\EditStaff.aspx.designer.cs">
       <DependentUpon>EditStaff.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sources\ManageStaff\Functions\InsertStaffIntoMySQL.aspx.cs">
@@ -188,12 +236,26 @@
     <Compile Include="Sources\ManageStaff\Functions\InsertStaffIntoMySQL.aspx.designer.cs">
       <DependentUpon>InsertStaffIntoMySQL.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sources\ManageStaff\Functions\ViewStaff.aspx.cs">
+    <Compile Include="Sources\ManageStaff\Functions\Personal\ViewStaff.aspx.cs">
       <DependentUpon>ViewStaff.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sources\ManageStaff\Functions\ViewStaff.aspx.designer.cs">
+    <Compile Include="Sources\ManageStaff\Functions\Personal\ViewStaff.aspx.designer.cs">
       <DependentUpon>ViewStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\WorkingTime\AddWorkingTime.aspx.cs">
+      <DependentUpon>AddWorkingTime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\WorkingTime\AddWorkingTime.aspx.designer.cs">
+      <DependentUpon>AddWorkingTime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\WorkingTime\EditWorkingTime.aspx.cs">
+      <DependentUpon>EditWorkingTime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\Functions\WorkingTime\EditWorkingTime.aspx.designer.cs">
+      <DependentUpon>EditWorkingTime.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sources\ManageStaff\ManageStaff.aspx.cs">
       <DependentUpon>ManageStaff.aspx</DependentUpon>
@@ -201,34 +263,6 @@
     </Compile>
     <Compile Include="Sources\ManageStaff\ManageStaff.aspx.designer.cs">
       <DependentUpon>ManageStaff.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Sources\QLDH.aspx.cs">
-      <DependentUpon>QLDH.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Sources\QLDH.aspx.designer.cs">
-      <DependentUpon>QLDH.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Sources\QLKH.aspx.cs">
-      <DependentUpon>QLKH.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Sources\QLKH.aspx.designer.cs">
-      <DependentUpon>QLKH.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Sources\QLNB.aspx.cs">
-      <DependentUpon>QLNB.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Sources\QLNB.aspx.designer.cs">
-      <DependentUpon>QLNB.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Sources\QLSP.aspx.cs">
-      <DependentUpon>QLSP.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Sources\QLSP.aspx.designer.cs">
-      <DependentUpon>QLSP.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -245,6 +279,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Display\images\" />
     <Folder Include="Models\" />
     <Folder Include="Sources\ManageProduct\" />
   </ItemGroup>

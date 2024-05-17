@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GroupProject
+namespace GroupProject.Sources.ManageStaff.Functions.JobHistory
 {
 
 
-    public partial class QLSP
+    public partial class AddJobHistory
     {
     }
 }

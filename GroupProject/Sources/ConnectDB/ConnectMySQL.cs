@@ -54,7 +54,7 @@ namespace GroupProject.Sources.ConnectDB
         }
 
         // Phương pháp thực hiện lệnh SQL như INSERT, UPDATE, hoặc DELETE
-        public int CapNhat(string sql)
+        public int ExecuteQuery(string sql)
         {
             int ketqua = 0; // Biến để lưu số hàng bị ảnh hưởng
             try

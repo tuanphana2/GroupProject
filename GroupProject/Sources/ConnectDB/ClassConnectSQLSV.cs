@@ -17,7 +17,7 @@ namespace GroupProject.Sources.ConnectDB
         SqlConnection con;
 
         // Mở kết nối với SQL Server
-        private void Connect()
+        private void Connect()  
         {
             // Chuỗi kết nối chứa thông tin máy chủ, cơ sở dữ liệu, và các tùy chọn bảo mật
             string sqlcn = "Data Source=TUAN\\SQLEXPRESS1;Initial Catalog=HRM;Integrated Security=True";

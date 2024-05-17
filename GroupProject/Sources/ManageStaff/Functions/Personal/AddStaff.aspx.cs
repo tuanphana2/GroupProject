@@ -50,7 +50,7 @@ namespace GroupProject.Sources.ManageStaff.Functions
             }
             // Tạo truy vấn SQL để thêm một nhân viên mới
             string sql = "INSERT INTO PERSONAL VALUES('" + pID + "', '" + fN + "', '" + lN + "', '" + mN + "', '" + formattedDate + "', '" + sSN +
-                "', '" + dL + "', '" + adr1 + "','" + adr2 + "', '" + city + "', '" + country + "', '" + zip + "', '" + gender + "', '" + phone +
+                "', '" + dL + "', '" + adr1 + "', '" + adr2 + "', '" + city + "', '" + country + "', '" + zip + "', '" + gender + "', '" + phone +
                 "', '" + email + "', '" + ms + "', '" + eth + "', '" + shs + "', '" + bpid + "')";
 
             // Sử dụng lớp ClassConnectSQLSV để thực hiện truy vấn SQL

@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace GroupProject
+namespace GroupProject.Sources.ManageStaff.Functions.JobHistory
 {
-    public partial class QLKH : System.Web.UI.Page
+    public partial class EditJobHistory : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

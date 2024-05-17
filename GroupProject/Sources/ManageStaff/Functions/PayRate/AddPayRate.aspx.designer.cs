@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GroupProject
+namespace GroupProject.Sources.ManageStaff.Functions.PayRate
 {
 
 
-    public partial class QLKH
+    public partial class AddPayRate
     {
     }
 }

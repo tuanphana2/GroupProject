@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GroupProject
+namespace GroupProject.Sources.ManageStaff.Functions.WorkingTime
 {
 
 
-    public partial class BCDT
+    public partial class AddWorkingTime
     {
     }
 }
