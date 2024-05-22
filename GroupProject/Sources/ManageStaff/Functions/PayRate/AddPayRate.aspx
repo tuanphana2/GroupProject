@@ -6,58 +6,58 @@
     <table style="width: 100%;">
         <tr>
             <td>
-                <asp:Label ID="lb_BPI" runat="server" Text="Benefit Plan ID:"></asp:Label>
+                <asp:Label ID="lb_PRID" runat="server" Text="Pay Rate ID:"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="txt_BPID" runat="server"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <asp:Label ID="lb_PN" runat="server" Text="Plan Name:"></asp:Label>
-            </td>
-            <td>
-                <asp:TextBox ID="txt_PN" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_PRID" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td>
-                <asp:Label ID="lb_Deductable" runat="server" Text="Deductable:"></asp:Label>
+                <asp:Label ID="lb_PRN" runat="server" Text="Pay Rate Name:"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="txt_Deductable" runat="server"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <asp:Label ID="lb_PC" runat="server" Text="Percentage Copay:"></asp:Label>
-            </td>
-            <td>
-                <asp:TextBox ID="txt_PC" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_PRN" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td>
-                <asp:Label ID="Label1" runat="server" Text="Percentage Copay:"></asp:Label>
+                <asp:Label ID="lb_Value" runat="server" Text="Value:"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <asp:Label ID="Label2" runat="server" Text="Percentage Copay:"></asp:Label>
-            </td>
-            <td>
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_Value" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td>
-                <asp:Label ID="Label3" runat="server" Text="Percentage Copay:"></asp:Label>
+                <asp:Label ID="lb_TP" runat="server" Text="Tax Percentage:"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_TP" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Label ID="lb_PayType" runat="server" Text="Pay Type:"></asp:Label>
+            </td>
+            <td>
+                <asp:TextBox ID="txt_PayType" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Label ID="lb_PA" runat="server" Text="Pay Amount:"></asp:Label>
+            </td>
+            <td>
+                <asp:TextBox ID="txt_P" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Label ID="lb_PTLC" runat="server" Text="PT - Level C:"></asp:Label>
+            </td>
+            <td>
+                <asp:TextBox ID="txt_PTLC" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>

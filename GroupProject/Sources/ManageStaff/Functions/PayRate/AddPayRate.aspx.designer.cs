@@ -15,130 +15,130 @@ namespace GroupProject.Sources.ManageStaff.Functions.PayRate
     {
 
         /// <summary>
-        /// lb_PR control.
+        /// lb_PRID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_PR;
+        protected global::System.Web.UI.WebControls.Label lb_PRID;
 
         /// <summary>
-        /// txt_BPID control.
+        /// txt_PRID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_BPID;
+        protected global::System.Web.UI.WebControls.TextBox txt_PRID;
 
         /// <summary>
-        /// lb_PN control.
+        /// lb_PRN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_PN;
+        protected global::System.Web.UI.WebControls.Label lb_PRN;
 
         /// <summary>
-        /// txt_PN control.
+        /// txt_PRN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_PN;
+        protected global::System.Web.UI.WebControls.TextBox txt_PRN;
 
         /// <summary>
-        /// lb_Deductable control.
+        /// lb_Value control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_Deductable;
+        protected global::System.Web.UI.WebControls.Label lb_Value;
 
         /// <summary>
-        /// txt_Deductable control.
+        /// txt_Value control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Deductable;
+        protected global::System.Web.UI.WebControls.TextBox txt_Value;
 
         /// <summary>
-        /// lb_PC control.
+        /// lb_TP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_PC;
+        protected global::System.Web.UI.WebControls.Label lb_TP;
 
         /// <summary>
-        /// txt_PC control.
+        /// txt_TP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_PC;
+        protected global::System.Web.UI.WebControls.TextBox txt_TP;
 
         /// <summary>
-        /// Label1 control.
+        /// lb_PayType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lb_PayType;
 
         /// <summary>
-        /// TextBox1 control.
+        /// txt_PayType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txt_PayType;
 
         /// <summary>
-        /// Label2 control.
+        /// lb_PA control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lb_PA;
 
         /// <summary>
-        /// TextBox2 control.
+        /// txt_P control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txt_P;
 
         /// <summary>
-        /// Label3 control.
+        /// lb_PTLC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label lb_PTLC;
 
         /// <summary>
-        /// TextBox3 control.
+        /// txt_PTLC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox txt_PTLC;
 
         /// <summary>
         /// bt_Add control.
