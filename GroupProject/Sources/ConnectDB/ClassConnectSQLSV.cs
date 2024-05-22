@@ -78,7 +78,7 @@ namespace GroupProject.Sources.ConnectDB
         }
 
         // Thực hiện truy vấn SQL và trả về giá trị đơn lẻ dưới dạng chuỗi (SELECT)
-        public string LayDuLieuChu(string sql)
+        public string GetValueString(string sql)
         {
             string ketqua = ""; // Biến lưu trữ giá trị chuỗi
             try
@@ -100,7 +100,7 @@ namespace GroupProject.Sources.ConnectDB
         }
 
         // Thực hiện truy vấn SQL và trả về giá trị đơn lẻ dưới dạng số (float)
-        public float LayGia(string sql)
+        public float GetValueFloat(string sql)
         {
             float ketqua = 0; // Biến lưu giá trị số
             try

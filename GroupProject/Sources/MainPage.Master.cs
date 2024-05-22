@@ -24,45 +24,5 @@ namespace GroupProject.Sources
         {
             Response.Redirect("~/Sources/ManageStaff/ManageStaff.aspx");
         }
-
-        protected void LinkQuanLySanPham_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void LinkQuanLyDonHang_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void LinkQuanLyNoiBo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void LinkBangKeLuong_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void LinkBaoCaoDoanhThu_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-        {
-
-        }
-
-        protected void LinkDangNhap_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void LinkDangKy_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

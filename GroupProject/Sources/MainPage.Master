@@ -27,28 +27,6 @@
                 <td style="width: 11%">
                     <asp:LinkButton ID="LinkManageStaff" runat="server" OnClick="LinkManageStaff_Click" Text="Manage Staff" ForeColor="white" Font-Underline="false"></asp:LinkButton>
                 </td>
-                <td style="width: 11%">
-                    <asp:LinkButton ID="LinkQuanLySanPham" runat="server" OnClick="LinkQuanLySanPham_Click" Text="Quản lý sản phẩm" ForeColor="white" Font-Underline="false"></asp:LinkButton>
-                </td>
-                <td style="width: 11%">
-                    <asp:LinkButton ID="LinkQuanLyDonHang" runat="server" OnClick="LinkQuanLyDonHang_Click" Text="Quản lý đơn hàng" ForeColor="white" Font-Underline="false"></asp:LinkButton>
-                </td>
-                <td style="width: 10%">
-                    <asp:LinkButton ID="LinkQuanLyNoiBo" runat="server" OnClick="LinkQuanLyNoiBo_Click" Text="Quản lý nội bộ" ForeColor="white" Font-Underline="false"></asp:LinkButton>
-                </td>
-                <td style="width: 10%">
-                    <asp:LinkButton ID="LinkBangKeLuong" runat="server" OnClick="LinkBangKeLuong_Click" Text="Bảng kê lương" ForeColor="white" Font-Underline="false"></asp:LinkButton>
-                </td>
-                <td style="width: 11%">
-                    <asp:LinkButton ID="LinkBaoCaoDoanhThu" runat="server" OnClick="LinkBaoCaoDoanhThu_Click" Text="Báo cáo doanh thu" ForeColor="white" Font-Underline="false"></asp:LinkButton>
-                </td>
-                <td style="width: 6%"></td>
-                <td style="width: 7%">
-                    <asp:LinkButton ID="LinkDangNhap" runat="server" OnClick="LinkDangNhap_Click" Text="Đăng nhập" ForeColor="white" Font-Underline="false"></asp:LinkButton>
-                </td>
-                <td style="width: 7%">
-                    <asp:LinkButton ID="LinkDangKy" runat="server" OnClick="LinkDangKy_Click" Text="Đăng ký" ForeColor="white" Font-Underline="false"></asp:LinkButton>
-                </td>
             </tr>
         </table>
         <img src="Hinhanh/banner.jpg" style="width:100%"/>
