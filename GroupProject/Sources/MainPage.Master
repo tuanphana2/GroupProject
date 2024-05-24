@@ -7,6 +7,7 @@
     <title>My Website</title>
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
     <link rel="stylesheet" type="text/css" href="<%= ResolveUrl("~/Display/css/MasterStyle.css") %>" />
+<<<<<<< HEAD
 
 
     <style>
@@ -71,6 +72,22 @@
     <!-- Responsive style -->
     <link href='<%= ResolveUrl("~/Assets/css/responsive.css") %>' rel="stylesheet" />
 
+=======
+    <!-- bootstrap core css -->
+
+    <link href="~/Assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- font awesome style -->
+    <link href="~/Assets/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="~/Assets/css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="~/Assets/css/responsive.css" rel="stylesheet" />
+>>>>>>> 1cf566ad1d84b5c0af499afa6079e6017f9ed860
 </head>
 <body>
     <form id="form1" runat="server">
@@ -85,6 +102,13 @@
                         <li><a href="<%= ResolveUrl("~/Sources/AlertsManagement.aspx") %>">Alerts</a></li>
                         <li><a href="<%= ResolveUrl("~/Sources/AdminDashboard.aspx") %>">Dashboard</a></li>
                         <li><a href="<%= ResolveUrl("~/Sources/UserManagement.aspx") %>">User Management</a></li>
+                        <li>
+                            <asp:DropDownList ID="ddlLoginOptions" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlLoginOptions_SelectedIndexChanged">
+                                <asp:ListItem Text="Account" Value="" />
+                                <asp:ListItem Text="Login" Value="Login" />
+                                <asp:ListItem Text="Logout" Value="Logout" />
+                            </asp:DropDownList>
+                        </li>
                     </ul>
                 </nav>
             </asp:ContentPlaceHolder>
@@ -92,6 +116,10 @@
         <div class="main-content">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
         </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1cf566ad1d84b5c0af499afa6079e6017f9ed860
     </form>
 
 

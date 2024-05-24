@@ -4,20 +4,15 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <section class="employee-management">
-            <h2>Quản Lý Thông Tin Nhân Viên và Bảng Lương</h2>
-            <div class="income-overview">
-                <h3>Tổng Quan Thu Nhập</h3>
-                <!-- Add details here -->
-            </div>
-            <div class="leave-overview">
-                <h3>Tổng Quan Ngày Nghỉ</h3>
-                <!-- Add details here -->
-            </div>
-            <div class="benefit-cost">
-                <h3>Trung Bình Chi Phí Phúc Lợi</h3>
-                <!-- Add details here -->
-            </div>
-        </section>
+        <h2>Quản Lý Thông Tin Nhân Viên và Bảng Lương</h2>
+        
+        <h3>Tổng Quan Thu Nhập</h3>
+        <asp:GridView ID="gvIncomeOverview" runat="server" CssClass="table table-bordered" AutoGenerateColumns="true"></asp:GridView>
+
+        <h3>Tổng Quan Ngày Nghỉ</h3>
+        <asp:GridView ID="gvLeaveOverview" runat="server" CssClass="table table-bordered" AutoGenerateColumns="true"></asp:GridView>
+
+        <h3>Trung Bình Chi Phí Phúc Lợi</h3>
+        <asp:GridView ID="gvBenefitCostOverview" runat="server" CssClass="table table-bordered" AutoGenerateColumns="true"></asp:GridView>
     </div>
 </asp:Content>
