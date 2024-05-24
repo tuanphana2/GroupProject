@@ -102,10 +102,10 @@
                         <li>
                             <% if (Session["tdn"] != null)
                                 { %>
-                            <a href="<%= ResolveUrl("~/Sources/Login.aspx") %>">Logout</a>
+                            <asp:LinkButton ID="Link_Logout" runat="server" OnClick="Link_Logout_Click">Logout</asp:LinkButton>
                             <% }
-                            else
-                            { %>
+                                else
+                                { %>
                             <a href="<%= ResolveUrl("~/Sources/Login.aspx") %>">Login</a>
                             <% } %>
                         </li>

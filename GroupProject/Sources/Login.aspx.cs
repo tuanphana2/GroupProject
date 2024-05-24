@@ -17,10 +17,13 @@ namespace GroupProject.Sources
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["tdn"] != null)
+            if(!IsPostBack)
             {
-                Response.Redirect("~/Sources/HomePage.aspx");
-            }
+                if (Session["tdn"] != null)
+                {
+                    Response.Redirect("~/Sources/HomePage.aspx");
+                }
+            }   
         }
 
         protected void btDangNhap_Click(object sender, EventArgs e)
@@ -33,6 +36,12 @@ namespace GroupProject.Sources
                 return;
             }
 
+            if (!IsValidUsername(tdn))
+            {
+                lbthongbao.Text = "Invalid username!";
+                return;
+            }
+
             // Check for default admin login
             if (tdn == "admin" && mk == "123456")
             {
@@ -40,26 +49,11 @@ namespace GroupProject.Sources
                 Response.Redirect("~/Sources/HomePage.aspx");
                 return;
             }
-
-            if (!IsValidUsername(tdn))
-            {
-                lbthongbao.Text = "Invalid username!";
-                return;
-            }
-
-            lbtbNhapTDN.Text = "";
-            lbtbMK.Text = "";
-            string sql = $"SELECT * FROM TAIKHOAN WHERE TENDANGNHAP = '{tdn}' AND MATKHAU = '{mk}'";
-            DataTable dt = connect.GetData(sql);
-            if (dt.Rows.Count > 0)
-            {
-                Session["tdn"] = tdn;
-                Server.Transfer("~/HomePage.aspx");
-            }
             else
             {
-                lbthongbao.Text = "Username or password is incorrect!";
-            }
+                lbthongbao.Text = "Wrong username or password!";
+                return;
+            }    
         }
 
         protected void lnkForgotPassword_Click(object sender, EventArgs e)

@@ -18,7 +18,7 @@ namespace GroupProject.Sources
                 if (Session["tdn"] != null)
                 {
                     // Nếu đã đăng nhập, hiển thị liên kết "Logout"
-                    Response.Write("<a href='~/Sources/Login.aspx'>Logout</a>");
+                    Response.Write("<a href='~/Sources/Login.aspx' OnClick='Button_Logout_Click'>Logout</a>");
                 }
                 else
                 {
@@ -57,6 +57,11 @@ namespace GroupProject.Sources
                 // Nếu chưa đăng nhập, chuyển hướng về trang Login
                 Response.Redirect("~/Sources/Login.aspx");
             }
+        }
+        protected void Link_Logout_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("~/Sources/Login.aspx");
         }
     }
 }
