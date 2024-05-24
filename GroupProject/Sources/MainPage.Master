@@ -52,7 +52,7 @@
             padding: 20px;
         }
     </style>
-    
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 
 
@@ -100,11 +100,14 @@
                         <li><a href="<%= ResolveUrl("~/Sources/AdminDashboard.aspx") %>">Dashboard</a></li>
                         <li><a href="<%= ResolveUrl("~/Sources/UserManagement.aspx") %>">User Management</a></li>
                         <li>
-                            <asp:DropDownList ID="ddlLoginOptions" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlLoginOptions_SelectedIndexChanged">
-                                <asp:ListItem Text="Account" Value="" />
-                                <asp:ListItem Text="Login" Value="Login" />
-                                <asp:ListItem Text="Logout" Value="Logout" />
-                            </asp:DropDownList>
+                            <% if (Session["tdn"] != null)
+                                { %>
+                            <a href="<%= ResolveUrl("~/Sources/Login.aspx") %>">Logout</a>
+                            <% }
+                            else
+                            { %>
+                            <a href="<%= ResolveUrl("~/Sources/Login.aspx") %>">Login</a>
+                            <% } %>
                         </li>
                     </ul>
                 </nav>

@@ -14,18 +14,16 @@ namespace GroupProject.Sources
         {
             if (!IsPostBack)
             {
-                // Kiểm tra Session có tồn tại và ddlLoginOptions đã được tìm thấy
-                if (Session["tdn"] != null && ddlLoginOptions != null)
+                // Kiểm tra Session có tồn tại
+                if (Session["tdn"] != null)
                 {
-                    ddlLoginOptions.Items.Clear();
-                    ddlLoginOptions.Items.Add(new ListItem("Account", ""));
-                    ddlLoginOptions.Items.Add(new ListItem("Logout", "Logout"));
+                    // Nếu đã đăng nhập, hiển thị liên kết "Logout"
+                    Response.Write("<a href='~/Sources/Login.aspx'>Logout</a>");
                 }
-                else if (ddlLoginOptions != null)
+                else
                 {
-                    ddlLoginOptions.Items.Clear();
-                    ddlLoginOptions.Items.Add(new ListItem("Account", ""));
-                    ddlLoginOptions.Items.Add(new ListItem("Login", "Login"));
+                    // Nếu chưa đăng nhập, hiển thị liên kết "Login"
+                    Response.Write("<a href='~/Sources/Login.aspx'>Login</a>");
                 }
             }
         }
@@ -47,17 +45,17 @@ namespace GroupProject.Sources
 
         protected void ddlLoginOptions_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (ddlLoginOptions != null)
+            // Kiểm tra xem người dùng đã đăng nhập hay chưa
+            if (Session["tdn"] != null)
             {
-                if (ddlLoginOptions.SelectedValue == "Login")
-                {
-                    Response.Redirect("~/Sources/Login.aspx");
-                }
-                else if (ddlLoginOptions.SelectedValue == "Logout")
-                {
-                    Session.Clear();
-                    Response.Redirect("~/Sources/Login.aspx");
-                }
+                // Nếu đã đăng nhập, xóa Session và chuyển hướng về trang Login
+                Session.Clear();
+                Response.Redirect("~/Sources/Login.aspx");
+            }
+            else
+            {
+                // Nếu chưa đăng nhập, chuyển hướng về trang Login
+                Response.Redirect("~/Sources/Login.aspx");
             }
         }
     }

@@ -42,15 +42,6 @@ namespace GroupProject.Sources
         protected global::System.Web.UI.WebControls.ContentPlaceHolder HeaderContent;
 
         /// <summary>
-        /// ddlLoginOptions control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLoginOptions;
-
-        /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>
         /// <remarks>
