@@ -11,43 +11,43 @@ namespace GroupProject.Sources
 {
 
 
-    public partial class MainPage
+    public partial class AlertsManagement
     {
 
         /// <summary>
-        /// head control.
+        /// workAnniversaryAlert control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Label workAnniversaryAlert;
 
         /// <summary>
-        /// form1 control.
+        /// leaveAccumulationAlert control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label leaveAccumulationAlert;
 
         /// <summary>
-        /// HeaderContent control.
+        /// benefitPlanAlert control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder HeaderContent;
+        protected global::System.Web.UI.WebControls.Label benefitPlanAlert;
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// birthdayAlert control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Label birthdayAlert;
     }
 }

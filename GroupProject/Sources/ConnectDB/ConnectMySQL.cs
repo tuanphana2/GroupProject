@@ -18,7 +18,7 @@ namespace GroupProject.Sources.ConnectDB
         private void Connect()
         {
             // Chuỗi kết nối bao gồm thông tin cần thiết để kết nối
-            string sqlcn = "Server=localhost;Database=mydb;User Id=root;Password='';";
+            string sqlcn = "Server=localhost;Database=mydb;User Id=root;Password='123456789@';";
             con = new MySqlConnection(sqlcn); // Tạo đối tượng kết nối MySQL
             con.Open(); // Mở kết nối
         }

@@ -15,19 +15,5 @@ namespace GroupProject.Sources
 
         }
 
-        protected void LinkHomePage_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("~/Sources/HomePage.aspx");
-        }
-
-        protected void LinkManageStaff_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/Sources/ManageStaff/ManageStaff.aspx");
-        }
-
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-        {
-            Server.Transfer("~/Sources/HomePage.aspx");
-        }
     }
 }

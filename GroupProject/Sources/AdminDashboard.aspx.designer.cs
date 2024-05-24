@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GroupProject
+namespace GroupProject.Sources
 {
 
 
-    public partial class HomePage
+    public partial class AdminDashboard
     {
     }
 }
