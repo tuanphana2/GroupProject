@@ -12,7 +12,9 @@ namespace GroupProject.Sources
 {
     public partial class Login : System.Web.UI.Page
     {
+        protected global::System.Web.UI.WebControls.DropDownList ddlLoginOptions;
         ClassConnectSQLSV connect = new ClassConnectSQLSV();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["tdn"] != null)
@@ -44,27 +46,27 @@ namespace GroupProject.Sources
                 lbthongbao.Text = "Invalid username!";
                 return;
             }
+
+            lbtbNhapTDN.Text = "";
+            lbtbMK.Text = "";
+            string sql = $"SELECT * FROM TAIKHOAN WHERE TENDANGNHAP = '{tdn}' AND MATKHAU = '{mk}'";
+            DataTable dt = connect.GetData(sql);
+            if (dt.Rows.Count > 0)
+            {
+                Session["tdn"] = tdn;
+                Server.Transfer("~/HomePage.aspx");
+            }
             else
             {
-                lbtbNhapTDN.Text = "";
-                lbtbMK.Text = "";
-                string sql = "SELECT * FROM TAIKHOAN WHERE TENDANGNHAP = '" + tdn + "' AND MATKHAU = '" + mk + "'";
-                DataTable dt = connect.GetData(sql);
-                if (dt.Rows.Count > 0)
-                {
-                    Session["tdn"] = tdn;
-                    Server.Transfer("~/HomePage.aspx");
-                }
-                else
-                {
-                    lbthongbao.Text = "Username or password is incorrect!";
-                }
+                lbthongbao.Text = "Username or password is incorrect!";
             }
         }
+
         protected void lnkForgotPassword_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Functions/ForgotPassword/ForgotPassword.aspx");
         }
+
         private bool IsValidUsername(string username)
         {
             return !Regex.IsMatch(username, "[^a-zA-Z0-9]");

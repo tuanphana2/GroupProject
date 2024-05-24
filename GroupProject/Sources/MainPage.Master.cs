@@ -14,13 +14,14 @@ namespace GroupProject.Sources
         {
             if (!IsPostBack)
             {
-                if (Session["tdn"] != null)
+                // Kiểm tra Session có tồn tại và ddlLoginOptions đã được tìm thấy
+                if (Session["tdn"] != null && ddlLoginOptions != null)
                 {
                     ddlLoginOptions.Items.Clear();
                     ddlLoginOptions.Items.Add(new ListItem("Account", ""));
                     ddlLoginOptions.Items.Add(new ListItem("Logout", "Logout"));
                 }
-                else
+                else if (ddlLoginOptions != null)
                 {
                     ddlLoginOptions.Items.Clear();
                     ddlLoginOptions.Items.Add(new ListItem("Account", ""));
@@ -46,14 +47,17 @@ namespace GroupProject.Sources
 
         protected void ddlLoginOptions_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (ddlLoginOptions.SelectedValue == "Login")
+            if (ddlLoginOptions != null)
             {
-                Response.Redirect("~/Sources/Login.aspx");
-            }
-            else if (ddlLoginOptions.SelectedValue == "Logout")
-            {
-                Session.Clear();
-                Response.Redirect("~/Sources/Login.aspx");
+                if (ddlLoginOptions.SelectedValue == "Login")
+                {
+                    Response.Redirect("~/Sources/Login.aspx");
+                }
+                else if (ddlLoginOptions.SelectedValue == "Logout")
+                {
+                    Session.Clear();
+                    Response.Redirect("~/Sources/Login.aspx");
+                }
             }
         }
     }
