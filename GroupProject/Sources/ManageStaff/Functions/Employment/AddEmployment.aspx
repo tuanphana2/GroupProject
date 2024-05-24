@@ -9,7 +9,7 @@
                 <asp:Label ID="lb_EID" runat="server" Text="Employment ID:"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="txt_EID" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_EID" runat="server" TextMode="Number"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -33,7 +33,7 @@
                 <asp:Label ID="lb_HDFW" runat="server" Text="Hire Date For Working:"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="txt_HDFW" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_HDFW" runat="server" TextMode="Date"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -49,7 +49,7 @@
                 <asp:Label ID="lb_TerDate" runat="server" Text="Termination Date:"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="txt_TerDate" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_TerDate" runat="server" TextMode="Date"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -57,7 +57,7 @@
                 <asp:Label ID="lb_RDFW" runat="server" Text="Rehire Date For Working:"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="txt_RDFW" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_RDFW" runat="server" TextMode="Date"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -65,15 +65,15 @@
                 <asp:Label ID="lb_LRD" runat="server" Text="Last Review Date:"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="txt_LRD" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_LRD" runat="server" TextMode="Date"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td>
-                <asp:Label ID="lb_NDROWPR" runat="server" Text="Number Days Requirement Of Working Per Month:"></asp:Label>
+                <asp:Label ID="lb_NDROWPRM" runat="server" Text="Number Days Requirement Of Working Per Month:"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="txt_NDROWPR" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_NDROWPRM" runat="server" TextMode="Number"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -81,13 +81,13 @@
                 <asp:Label ID="lb_PID" runat="server" Text="Person ID:"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="txt_PID" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_PID" runat="server" TextMode="Number"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td></td>
             <td>
-                <asp:Button ID="bt_Add" runat="server" Text="Add" />
+                <asp:Button ID="bt_Add" runat="server" Text="Add" OnClick="bt_Add_Click" />
             </td>
         </tr>
     </table>

@@ -24,6 +24,24 @@ namespace GroupProject.Sources.ManageStaff.Functions
         protected global::System.Web.UI.WebControls.TextBox txt_pID;
 
         /// <summary>
+        /// Label2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label2;
+
+        /// <summary>
+        /// txt_EN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_EN;
+
+        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -132,13 +150,13 @@ namespace GroupProject.Sources.ManageStaff.Functions
         protected global::System.Web.UI.WebControls.TextBox txt_Zip;
 
         /// <summary>
-        /// txt_Gender control.
+        /// ddl_Gentle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Gender;
+        protected global::System.Web.UI.WebControls.DropDownList ddl_Gentle;
 
         /// <summary>
         /// txt_Phone control.
@@ -186,13 +204,58 @@ namespace GroupProject.Sources.ManageStaff.Functions
         protected global::System.Web.UI.WebControls.TextBox txt_Shareholder;
 
         /// <summary>
-        /// txt_Benefit control.
+        /// ddl_Benefit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Benefit;
+        protected global::System.Web.UI.WebControls.DropDownList ddl_Benefit;
+
+        /// <summary>
+        /// txt_PR control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_PR;
+
+        /// <summary>
+        /// ddl_PRID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_PRID;
+
+        /// <summary>
+        /// txt_VD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_VD;
+
+        /// <summary>
+        /// txt_PTD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_PTD;
+
+        /// <summary>
+        /// txt_PLY control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_PLY;
 
         /// <summary>
         /// bt_Add control.

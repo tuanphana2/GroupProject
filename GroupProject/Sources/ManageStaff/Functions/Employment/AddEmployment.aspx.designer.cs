@@ -159,22 +159,22 @@ namespace GroupProject.Sources.ManageStaff.Functions.Employment
         protected global::System.Web.UI.WebControls.TextBox txt_LRD;
 
         /// <summary>
-        /// lb_NDROWPR control.
+        /// lb_NDROWPRM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_NDROWPR;
+        protected global::System.Web.UI.WebControls.Label lb_NDROWPRM;
 
         /// <summary>
-        /// txt_NDROWPR control.
+        /// txt_NDROWPRM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_NDROWPR;
+        protected global::System.Web.UI.WebControls.TextBox txt_NDROWPRM;
 
         /// <summary>
         /// lb_PID control.

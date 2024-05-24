@@ -17,9 +17,6 @@
                 <td>
                     <asp:Button ID="Bt_View" runat="server" Text="View" OnClick="Bt_View_Click" />
                 </td>
-                <td>
-                    <asp:Button ID="Bt_Edit" runat="server" Text="Edit" OnClick="Bt_Edit_Click" />
-                </td>
                 <td class="auto-style2">
                     <asp:Button ID="Bt_Delete" runat="server" Text="Delete" OnClick="Bt_Delete_Click" />
                 </td>
@@ -34,7 +31,7 @@
                 </td>
             </tr>
         </table>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand">
             <Columns>
                 <asp:TemplateField>
                     <HeaderTemplate>
@@ -56,6 +53,11 @@
                 <asp:TemplateField>
                     <ItemTemplate>
                         <asp:LinkButton ID="link_Edit" runat="server" Text="Edit" CommandName="EditRow" CommandArgument='<%# Eval("PERSONAL_ID") %>' />
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField>
+                    <ItemTemplate>
+                        <asp:LinkButton ID="link_Delete" runat="server" Text="Delete" CommandName="DeleteRow" CommandArgument='<%# Eval("PERSONAL_ID") %>' />
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>

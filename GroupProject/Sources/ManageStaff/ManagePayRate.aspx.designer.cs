@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GroupProject.Sources.ManageStaff.Functions.BenefitPlan
+namespace GroupProject.Sources.ManageStaff
 {
 
 
-    public partial class EditBenefit
+    public partial class ManagePayRate
     {
     }
 }

@@ -3,14 +3,26 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <%--<div>
+        <asp:FileUpload ID="FileUpload1" runat="server" />
+        <asp:Button ID="bt_Import" runat="server" Text="Import" OnClick="bt_Import_Click" />
+    </div>--%>
     <div>
-        <table style="width: 100%; position:center">
+        <table style="width: 100%; position: center">
             <tr>
                 <td>
                     <asp:Label runat="server" Text="Personal ID"></asp:Label>
                 </td>
                 <td>
                     <asp:TextBox runat="server" ID="txt_pID" TextMode="Number" Style="width: 168px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label runat="server" Text="Employee number" ID="Label2"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox runat="server" ID="txt_EN"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -106,7 +118,11 @@
                     <asp:Label runat="server" Text="Gender"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox runat="server" ID="txt_Gender"></asp:TextBox>
+                    <asp:DropDownList ID="ddl_Gentle" runat="server">
+                        <asp:ListItem>Male</asp:ListItem>
+                        <asp:ListItem>Female</asp:ListItem>
+                        <asp:ListItem>Other</asp:ListItem>
+                    </asp:DropDownList>
                 </td>
             </tr>
             <tr>
@@ -154,7 +170,47 @@
                     <asp:Label runat="server" Text="Benefit plan id"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox runat="server" ID="txt_Benefit"></asp:TextBox>
+                    <asp:DropDownList ID="ddl_Benefit" runat="server"></asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label runat="server" Text="Pay rate"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox runat="server" ID="txt_PR"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label runat="server" Text="Pay rate ID"></asp:Label>
+                </td>
+                <td>
+                    <asp:DropDownList ID="ddl_PRID" runat="server"></asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label runat="server" Text="Vacation days"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox runat="server" ID="txt_VD"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label runat="server" Text="Paid to date"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox runat="server" ID="txt_PTD"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label runat="server" Text="Paid last year"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox runat="server" ID="txt_PLY"></asp:TextBox>
                 </td>
             </tr>
             <tr>

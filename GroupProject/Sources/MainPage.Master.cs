@@ -24,5 +24,10 @@ namespace GroupProject.Sources
         {
             Response.Redirect("~/Sources/ManageStaff/ManageStaff.aspx");
         }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            Server.Transfer("~/Sources/HomePage.aspx");
+        }
     }
 }
