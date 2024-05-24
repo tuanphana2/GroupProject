@@ -13,7 +13,7 @@
             <button type="button">Get Started</button>
         </section>
         <section class="content">
-            <h2>About Us</h2>
+            
         </section>
         <footer>
             

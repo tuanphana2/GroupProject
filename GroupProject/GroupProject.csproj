@@ -132,6 +132,43 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\css\bootstrap.css" />
+    <Content Include="Assets\css\font-awesome.min.css" />
+    <Content Include="Assets\css\responsive.css" />
+    <Content Include="Assets\css\style.css" />
+    <Content Include="Assets\images\a-1.jpg" />
+    <Content Include="Assets\images\a-2.jpg" />
+    <Content Include="Assets\images\about-img.jpg" />
+    <Content Include="Assets\images\client.jpg" />
+    <Content Include="Assets\images\envelope-white.png" />
+    <Content Include="Assets\images\fb.png" />
+    <Content Include="Assets\images\feature-1.png" />
+    <Content Include="Assets\images\feature-2.png" />
+    <Content Include="Assets\images\feature-3.png" />
+    <Content Include="Assets\images\feature-4.png" />
+    <Content Include="Assets\images\fevicon\fevicon.png" />
+    <Content Include="Assets\images\linkedin.png" />
+    <Content Include="Assets\images\location-white.png" />
+    <Content Include="Assets\images\location.png" />
+    <Content Include="Assets\images\mail.png" />
+    <Content Include="Assets\images\phone.png" />
+    <Content Include="Assets\images\slider-bg.jpg" />
+    <Content Include="Assets\images\telephone-white.png" />
+    <Content Include="Assets\images\twitter.png" />
+    <Content Include="Assets\images\user.png" />
+    <Content Include="Assets\images\w1.png" />
+    <Content Include="Assets\images\w2.png" />
+    <Content Include="Assets\images\w3.png" />
+    <Content Include="Assets\images\w4.png" />
+    <Content Include="Assets\images\w5.png" />
+    <Content Include="Assets\images\w6.png" />
+    <Content Include="Assets\images\w7.png" />
+    <Content Include="Assets\images\w8.png" />
+    <Content Include="Assets\images\w9.png" />
+    <Content Include="Assets\images\youtube.png" />
+    <Content Include="Assets\js\bootstrap.js" />
+    <Content Include="Assets\js\custom.js" />
+    <Content Include="Assets\js\jquery-3.4.1.min.js" />
     <Content Include="Display\css\AddStaffStyle.css" />
     <Content Include="Display\css\HomePage.css" />
     <Content Include="Display\css\MasterStyle.css" />
@@ -140,6 +177,7 @@
     <Content Include="Sources\AlertsManagement.aspx" />
     <Content Include="Sources\EmployeeManagement.aspx" />
     <Content Include="Sources\HomePage.aspx" />
+    <Content Include="Sources\Login.aspx" />
     <Content Include="Sources\ManageStaff\Functions\Employment\AddEmployment.aspx" />
     <Content Include="Sources\ManageStaff\Functions\Employment\EditEmployment.aspx" />
     <Content Include="Sources\ManageStaff\Functions\Personal\AddPerson.aspx" />
@@ -186,6 +224,13 @@
     </Compile>
     <Compile Include="Sources\HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sources\MainPage.Master.cs">
       <DependentUpon>MainPage.Master</DependentUpon>
@@ -264,6 +309,11 @@
     <Content Include="App_Data\HR_2024.bak" />
     <Content Include="App_Data\SI Payroll DB.mwb.bak" />
     <Content Include="App_Data\SI Payroll DB.mwb" />
+    <Content Include="Assets\css\style.css.map" />
+    <Content Include="Assets\css\style.scss" />
+    <Content Include="Assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\fonts\fontawesome-webfont.woff2" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

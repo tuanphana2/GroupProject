@@ -13,5 +13,32 @@ namespace GroupProject.Sources
 
     public partial class EmployeeManagement
     {
+
+        /// <summary>
+        /// gvIncomeOverview control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvIncomeOverview;
+
+        /// <summary>
+        /// gvLeaveOverview control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvLeaveOverview;
+
+        /// <summary>
+        /// gvBenefitCostOverview control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvBenefitCostOverview;
     }
 }

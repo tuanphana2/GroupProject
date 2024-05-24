@@ -12,8 +12,49 @@ namespace GroupProject.Sources
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                if (Session["tdn"] != null)
+                {
+                    ddlLoginOptions.Items.Clear();
+                    ddlLoginOptions.Items.Add(new ListItem("Account", ""));
+                    ddlLoginOptions.Items.Add(new ListItem("Logout", "Logout"));
+                }
+                else
+                {
+                    ddlLoginOptions.Items.Clear();
+                    ddlLoginOptions.Items.Add(new ListItem("Account", ""));
+                    ddlLoginOptions.Items.Add(new ListItem("Login", "Login"));
+                }
+            }
         }
 
+        protected void LinkHomePage_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("~/Sources/HomePage.aspx");
+        }
+
+        protected void LinkManageStaff_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Sources/ManageStaff/ManageStaff.aspx");
+        }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            Server.Transfer("~/Sources/HomePage.aspx");
+        }
+
+        protected void ddlLoginOptions_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ddlLoginOptions.SelectedValue == "Login")
+            {
+                Response.Redirect("~/Sources/Login.aspx");
+            }
+            else if (ddlLoginOptions.SelectedValue == "Logout")
+            {
+                Session.Clear();
+                Response.Redirect("~/Sources/Login.aspx");
+            }
+        }
     }
 }
