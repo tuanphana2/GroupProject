@@ -90,10 +90,6 @@
             </div>
             <asp:Label ID="lbthongbao" runat="server"></asp:Label>
             <asp:Button ID="btDangNhap" runat="server" Text="Login" OnClick="btDangNhap_Click" />
-            <div class="link-buttons">
-                <a id="lnkForgotPassword" runat="server" onclick="lnkForgotPassword_Click">Forgot Password?</a>
-                <a id="lnkCreateAccount" runat="server" onclick="lnkCreateAccount_Click">Create Account</a>
-            </div>
         </div>
     </form>
 </body>

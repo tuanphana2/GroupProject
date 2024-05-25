@@ -88,24 +88,25 @@
             <!-- Sidebar -->
             <div id="sidebar">
                 <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/Display/images/z5474281508104_c2ddc4d66cc00af7eea85fe22a9ead69.jpg" CssClass="logo" />
+                <asp:LinkButton ID="LinkHomePage" runat="server" OnClick="LinkHomePage_Click" Text="Home Page" CssClass="sidebar-link"></asp:LinkButton>
+                <asp:LinkButton ID="LinkManageStaff" runat="server" OnClick="LinkManageStaff_Click" Text="Manage Staff" CssClass="sidebar-link"></asp:LinkButton>
+                <asp:DropDownList ID="HRManagement" runat="server" OnSelectedIndexChanged="HRManagement_SelectedIndexChanged" CssClass="sidebar-dropdown" AutoPostBack="true">
+                    <asp:ListItem Text="Overview" Value="SalaryOverview" Selected="True"></asp:ListItem>
+                    <asp:ListItem Text="Income Overview" Value="IncomeOverview"></asp:ListItem>
+                    <asp:ListItem Text="Vacation Overview" Value="VacationOverview"></asp:ListItem>
+                    <asp:ListItem Text="Average Benefit Costs" Value="AverageBenefitCosts"></asp:ListItem>
+                </asp:DropDownList>
+                <asp:LinkButton ID="LinkAlerts" runat="server" OnClick="LinkAlerts_Click" Text="Alerts" CssClass="sidebar-link"></asp:LinkButton>
                 <li>
                     <% if (Session["tdn"] != null)
                         { %>
                     <asp:LinkButton ID="Link_Logout" runat="server" OnClick="Link_Logout_Click">Logout</asp:LinkButton>
                     <% }
-                        else
-                        { %>
+                    else
+                    { %>
                     <a href="<%= ResolveUrl("~/Sources/Login.aspx") %>">Login</a>
                     <% } %>
                 </li>
-                <asp:LinkButton ID="LinkHomePage" runat="server" OnClick="LinkHomePage_Click" Text="Home Page" CssClass="sidebar-link"></asp:LinkButton>
-                <asp:LinkButton ID="LinkManageStaff" runat="server" OnClick="LinkManageStaff_Click" Text="Manage Staff" CssClass="sidebar-link"></asp:LinkButton>
-                <asp:DropDownList ID="HRManagement" runat="server" OnSelectedIndexChanged="HRManagement_SelectedIndexChanged" CssClass="sidebar-dropdown" AutoPostBack="true">
-                    <asp:ListItem Text="Overview" Value="SalaryOverview" Selected="True"></asp:ListItem>
-                    <asp:ListItem Text="Income Overview" Value="IncomeOverview" ></asp:ListItem>
-                    <asp:ListItem Text="Vacation Overview" Value="VacationOverview"></asp:ListItem>
-                    <asp:ListItem Text="Average Benefit Costs" Value="AverageBenefitCosts"></asp:ListItem>
-                </asp:DropDownList>
             </div>
             <!-- Main Content Area -->
             <div style="flex-grow: 1; padding: 20px;">

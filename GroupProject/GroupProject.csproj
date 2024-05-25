@@ -139,6 +139,7 @@
     <Content Include="Global.asax" />
     <Content Include="Sources\HomePage.aspx" />
     <Content Include="Sources\Login.aspx" />
+    <Content Include="Sources\ManageStaff\AlertsManagement.aspx" />
     <Content Include="Sources\ManageStaff\AverageBenefitCost.aspx" />
     <Content Include="Sources\ManageStaff\Functions\Personal\AddPerson.aspx" />
     <Content Include="Sources\ManageStaff\Functions\Personal\EditPerson.aspx" />
@@ -177,6 +178,13 @@
       <DependentUpon>MainPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sources\ManageStaff\AlertsManagement.aspx.cs">
+      <DependentUpon>AlertsManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\AlertsManagement.aspx.designer.cs">
+      <DependentUpon>AlertsManagement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sources\ManageStaff\AverageBenefitCost.aspx.cs">
       <DependentUpon>AverageBenefitCost.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

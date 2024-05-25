@@ -62,5 +62,10 @@ namespace GroupProject.Sources
             Session.Clear();
             Server.Transfer("~/Sources/Login.aspx");
         }
+
+        protected void LinkAlerts_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("~/Sources/ManageStaff/AlertsManagement.aspx");
+        }
     }
 }
