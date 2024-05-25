@@ -133,17 +133,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Display\css\AddStaffStyle.css" />
+    <Content Include="Display\css\HomePage.css" />
     <Content Include="Display\css\MasterStyle.css" />
+    <Content Include="Display\images\z5474281508104_c2ddc4d66cc00af7eea85fe22a9ead69.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Sources\HomePage.aspx" />
-    <Content Include="Sources\ManageStaff\Functions\Employment\AddEmployment.aspx" />
-    <Content Include="Sources\ManageStaff\Functions\Employment\EditEmployment.aspx" />
+    <Content Include="Sources\Login.aspx" />
+    <Content Include="Sources\ManageStaff\AdminDashboard.aspx" />
+    <Content Include="Sources\ManageStaff\AverageBenefitCost.aspx" />
     <Content Include="Sources\ManageStaff\Functions\Personal\AddPerson.aspx" />
     <Content Include="Sources\ManageStaff\Functions\Personal\EditPerson.aspx" />
-    <Content Include="Sources\ManageStaff\Functions\Personal\ViewPerson.aspx" />
-    <Content Include="Sources\ManageStaff\Functions\WorkingTime\AddWorkingTime.aspx" />
-    <Content Include="Sources\ManageStaff\Functions\WorkingTime\EditWorkingTime.aspx" />
     <Content Include="Sources\ManageStaff\ManageStaff.aspx" />
+    <Content Include="Sources\ManageStaff\TotalSalary.aspx" />
+    <Content Include="Sources\ManageStaff\VacationDay.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +163,13 @@
     <Compile Include="Sources\HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Sources\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sources\MainPage.Master.cs">
       <DependentUpon>MainPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -169,19 +178,19 @@
       <DependentUpon>MainPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sources\ManageStaff\Functions\Employment\AddEmployment.aspx.cs">
-      <DependentUpon>AddEmployment.aspx</DependentUpon>
+    <Compile Include="Sources\ManageStaff\AdminDashboard.aspx.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sources\ManageStaff\Functions\Employment\AddEmployment.aspx.designer.cs">
-      <DependentUpon>AddEmployment.aspx</DependentUpon>
+    <Compile Include="Sources\ManageStaff\AdminDashboard.aspx.designer.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sources\ManageStaff\Functions\Employment\EditEmployment.aspx.cs">
-      <DependentUpon>EditEmployment.aspx</DependentUpon>
+    <Compile Include="Sources\ManageStaff\AverageBenefitCost.aspx.cs">
+      <DependentUpon>AverageBenefitCost.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sources\ManageStaff\Functions\Employment\EditEmployment.aspx.designer.cs">
-      <DependentUpon>EditEmployment.aspx</DependentUpon>
+    <Compile Include="Sources\ManageStaff\AverageBenefitCost.aspx.designer.cs">
+      <DependentUpon>AverageBenefitCost.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sources\ManageStaff\Functions\Personal\AddPerson.aspx.cs">
       <DependentUpon>AddPerson.aspx</DependentUpon>
@@ -197,33 +206,26 @@
     <Compile Include="Sources\ManageStaff\Functions\Personal\EditPerson.aspx.designer.cs">
       <DependentUpon>EditPerson.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sources\ManageStaff\Functions\Personal\ViewPerson.aspx.cs">
-      <DependentUpon>ViewPerson.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Sources\ManageStaff\Functions\Personal\ViewPerson.aspx.designer.cs">
-      <DependentUpon>ViewPerson.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Sources\ManageStaff\Functions\WorkingTime\AddWorkingTime.aspx.cs">
-      <DependentUpon>AddWorkingTime.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Sources\ManageStaff\Functions\WorkingTime\AddWorkingTime.aspx.designer.cs">
-      <DependentUpon>AddWorkingTime.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Sources\ManageStaff\Functions\WorkingTime\EditWorkingTime.aspx.cs">
-      <DependentUpon>EditWorkingTime.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Sources\ManageStaff\Functions\WorkingTime\EditWorkingTime.aspx.designer.cs">
-      <DependentUpon>EditWorkingTime.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Sources\ManageStaff\ManageStaff.aspx.cs">
       <DependentUpon>ManageStaff.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Sources\ManageStaff\ManageStaff.aspx.designer.cs">
       <DependentUpon>ManageStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\TotalSalary.aspx.cs">
+      <DependentUpon>TotalSalary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\TotalSalary.aspx.designer.cs">
+      <DependentUpon>TotalSalary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\VacationDay.aspx.cs">
+      <DependentUpon>VacationDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\ManageStaff\VacationDay.aspx.designer.cs">
+      <DependentUpon>VacationDay.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -240,7 +242,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Display\images\" />
     <Folder Include="Models\" />
     <Folder Include="Sources\ManageProduct\" />
   </ItemGroup>

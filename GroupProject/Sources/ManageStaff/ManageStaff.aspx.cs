@@ -29,11 +29,6 @@ namespace GroupProject.Sources.ManageStaff
             Response.Redirect("~/Sources/ManageStaff/Functions/Personal/AddPerson.aspx");
         }
 
-        protected void Bt_View_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/Sources/ManageStaff/Functions/Personal/ViewPerson.aspx");
-        }
-
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "EditRow")

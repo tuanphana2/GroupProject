@@ -7,65 +7,56 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GroupProject.Sources.ManageStaff
+namespace GroupProject.Sources
 {
 
 
-    public partial class ManageStaff
+    public partial class Login
     {
 
         /// <summary>
-        /// Bt_Add control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Bt_Add;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Bt_Delete control.
+        /// txtTDN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Bt_Delete;
+        protected global::System.Web.UI.WebControls.TextBox txtTDN;
 
         /// <summary>
-        /// Bt_Import control.
+        /// txtMK control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Bt_Import;
+        protected global::System.Web.UI.WebControls.TextBox txtMK;
 
         /// <summary>
-        /// Bt_Export control.
+        /// lbthongbao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Bt_Export;
+        protected global::System.Web.UI.WebControls.Label lbthongbao;
 
         /// <summary>
-        /// Bt_Print control.
+        /// btDangNhap control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Bt_Print;
-
-        /// <summary>
-        /// GridView1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.HtmlControls.HtmlButton btDangNhap;
     }
 }

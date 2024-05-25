@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GroupProject.Sources.ManageStaff.Functions.Employment
+namespace GroupProject.Sources.ManageStaff
 {
 
 
-    public partial class EditEmployment
+    public partial class AdminDashboard
     {
     }
 }

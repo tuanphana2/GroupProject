@@ -29,5 +29,33 @@ namespace GroupProject.Sources
         {
             Server.Transfer("~/Sources/HomePage.aspx");
         }
+        protected void HRManagement_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedValue = HRManagement.SelectedValue;
+            switch (selectedValue)
+            {
+                case "SalaryOverview":
+                    Response.Redirect("~/Sources/ManageStaff/TotalSalary.aspx");
+                    break;
+                case "IncomeOverview":
+                    Response.Redirect("~/Sources/ManageStaff/TotalSalary.aspx");
+                    break;
+                case "VacationOverview":
+                    Response.Redirect("~/Sources/ManageStaff/VacationDay.aspx");
+                    break;
+                case "AverageBenefitCosts":
+                    Response.Redirect("~/Sources/ManageStaff/AverageBenefitCost.aspx");
+                    break;
+                default:
+                    // Do nothing or redirect to a default page if necessary
+                    break;
+            }
+        }
+
+        protected void Link_Logout_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Server.Transfer("~/Sources/Login.aspx");
+        }
     }
 }
