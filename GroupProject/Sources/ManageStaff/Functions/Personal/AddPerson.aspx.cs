@@ -21,6 +21,9 @@ namespace GroupProject.Sources.ManageStaff.Functions
         {
             if (!IsPostBack)
             {
+                string tdn = Session["tdn"] + "";
+                if (tdn == "")
+                    Response.Redirect("~/Sources/Login.aspx");
                 LoadPayRates(); // Load dữ liệu vào Dropdownlist
                 LoadBenefitPlan();// Load dữ liệu vào Dropdownlist
             }

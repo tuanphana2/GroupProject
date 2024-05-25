@@ -54,9 +54,20 @@ namespace GroupProject.Sources
                 return;
             }
         }
+
+        protected void lnkForgotPassword_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Functions/ForgotPassword/ForgotPassword.aspx");
+        }
+
         private bool IsValidUsername(string username)
         {
             return !Regex.IsMatch(username, "[^a-zA-Z0-9]");
+        }
+
+        protected void lnkCreateAccount_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Register.aspx");
         }
     }
 }

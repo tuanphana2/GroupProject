@@ -12,7 +12,12 @@ namespace GroupProject.Sources
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                string tdn = Session["tdn"] + "";
+                if (tdn == "")
+                    Response.Redirect("~/Sources/Login.aspx");
+            }
         }
 
         protected void LinkHomePage_Click(object sender, EventArgs e)

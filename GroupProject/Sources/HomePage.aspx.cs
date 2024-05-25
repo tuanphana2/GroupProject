@@ -11,7 +11,11 @@ namespace GroupProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                if (Session["tdn"] == null)
+                    Response.Redirect("~/Sources/Login.aspx");
+            }
         }
     }
 }

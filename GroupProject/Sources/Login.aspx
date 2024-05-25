@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="GroupProject.Sources.Login" %>
 
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta charset="utf-8" />
@@ -88,7 +89,11 @@
                 <asp:TextBox ID="txtMK" runat="server" TextMode="Password"></asp:TextBox>
             </div>
             <asp:Label ID="lbthongbao" runat="server"></asp:Label>
-            <button id="btDangNhap" runat="server" onclick="btDangNhap_Click">Login</button>
+            <asp:Button ID="btDangNhap" runat="server" Text="Login" OnClick="btDangNhap_Click" />
+            <div class="link-buttons">
+                <a id="lnkForgotPassword" runat="server" onclick="lnkForgotPassword_Click">Forgot Password?</a>
+                <a id="lnkCreateAccount" runat="server" onclick="lnkCreateAccount_Click">Create Account</a>
+            </div>
         </div>
     </form>
 </body>

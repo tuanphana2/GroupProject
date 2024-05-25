@@ -14,6 +14,9 @@ namespace GroupProject.Sources.ManageStaff.Functions
         {
             if (!IsPostBack)
             {
+                string tdn = Session["tdn"] + "";
+                if (tdn == "")
+                    Response.Redirect("~/Sources/Login.aspx");
                 LoadDataIntoFields();
                 LoadPayRates();
                 LoadBenefitPlan();

@@ -18,6 +18,9 @@ namespace GroupProject.Sources.ManageStaff
         {
             if (!IsPostBack)
             {
+                string tdn = Session["tdn"] + "";
+                if (tdn == "")
+                    Response.Redirect("~/Sources/Login.aspx");
                 BindGrid();
                 LoadShareholder();
                 LoadGender();
