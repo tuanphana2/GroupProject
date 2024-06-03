@@ -1,11 +1,10 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainPage.master.cs" Inherits="GroupProject.Sources.MainPage" %>
 
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
     <meta charset="utf-8" />
-    <title></title>
+    <title>Master Page</title>
     <style>
         body {
             margin: 0;
@@ -65,19 +64,10 @@
     </style>
 
     <link rel="icon" href="~/Display/images/z5474281508104_c2ddc4d66cc00af7eea85fe22a9ead69.jpg" type="image/gif" />
-    <!-- bootstrap core css -->
-
     <link href="~/Assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-
-    <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-    <!-- font awesome style -->
     <link href="~/Assets/css/font-awesome.min.css" rel="stylesheet" />
-
-    <!-- Custom styles for this template -->
     <link href="~/Assets/css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
     <link href="~/Assets/css/responsive.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -121,18 +111,10 @@
     <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh; color: white; background-color: #111111">
     </div>
     <!-- footer section -->
-    <!-- jQery -->
     <script type="text/javascript" src="~/Assets/js/jquery-3.4.1.min.js"></script>
-    <!-- popper js -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script type="text/javascript" src="~/Assets/js/bootstrap.js"></script>
-    <!-- custom js -->
     <script type="text/javascript" src="~/Assets/js/custom.js"></script>
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-    </script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
 </body>
 </html>

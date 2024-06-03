@@ -17,15 +17,6 @@
                 <td class="auto-style2">
                     <asp:Button ID="Bt_Delete" runat="server" Text="Delete" OnClick="Bt_Delete_Click" />
                 </td>
-                <td>
-                    <asp:Button ID="Bt_Import" runat="server" Text="Import" OnClick="Bt_Import_Click" />
-                </td>
-                <td>
-                    <asp:Button ID="Bt_Export" runat="server" Text="Export" OnClick="Bt_Export_Click" />
-                </td>
-                <td>
-                    <asp:Button ID="Bt_Print" runat="server" Text="Print" OnClick="Bt_Print_Click" />
-                </td>
             </tr>
         </table>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand">

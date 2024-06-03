@@ -9,9 +9,6 @@
                 <td class="auto-style1">
                     <asp:Button ID="Bt_Add" runat="server" Text="+ Add new staff" OnClick="Bt_Add_Click" />
                 </td>
-                <td>
-                    <asp:Button ID="Bt_View" runat="server" Text="View" OnClick="Bt_View_Click" />
-                </td>
                 <td class="auto-style2">
                     <asp:Button ID="Bt_Delete" runat="server" Text="Delete" OnClick="Bt_Delete_Click" />
                 </td>

@@ -69,20 +69,5 @@ namespace GroupProject.Sources.ManageStaff
             int result = connect.ExecuteQuery(sql);
             return result > 0;
         }
-
-        protected void Bt_Import_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Functions/InsertStaffIntoMySQL.aspx");
-        }
-
-        protected void Bt_Export_Click(object sender, EventArgs e)
-        {
-            // Implement export functionality
-        }
-
-        protected void Bt_Print_Click(object sender, EventArgs e)
-        {
-            // Implement print functionality
-        }
     }
 }
