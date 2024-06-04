@@ -213,22 +213,22 @@ namespace GroupProject.Sources.ManageStaff.Functions
         protected global::System.Web.UI.WebControls.DropDownList ddl_Benefit;
 
         /// <summary>
-        /// ddl_PR control.
+        /// txt_PR control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddl_PR;
+        protected global::System.Web.UI.WebControls.TextBox txt_PR;
 
         /// <summary>
-        /// txt_PRID control.
+        /// ddl_PRID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_PRID;
+        protected global::System.Web.UI.WebControls.DropDownList ddl_PRID;
 
         /// <summary>
         /// txt_VD control.

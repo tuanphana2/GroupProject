@@ -1,7 +1,10 @@
 ﻿using GroupProject.Sources.ConnectDB;
 using System;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Data;
+=======
+>>>>>>> GỐC
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
@@ -17,13 +20,21 @@ namespace GroupProject.Sources
 
         protected void Page_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if(!IsPostBack)
+=======
+            if (!IsPostBack)
+>>>>>>> GỐC
             {
                 if (Session["tdn"] != null)
                 {
                     Response.Redirect("~/Sources/HomePage.aspx");
                 }
+<<<<<<< HEAD
             }   
+=======
+            }
+>>>>>>> GỐC
         }
 
         protected void btDangNhap_Click(object sender, EventArgs e)
@@ -53,7 +64,11 @@ namespace GroupProject.Sources
             {
                 lbthongbao.Text = "Wrong username or password!";
                 return;
+<<<<<<< HEAD
             }    
+=======
+            }
+>>>>>>> GỐC
         }
 
         protected void lnkForgotPassword_Click(object sender, EventArgs e)

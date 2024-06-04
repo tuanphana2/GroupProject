@@ -118,5 +118,31 @@ namespace GroupProject.Sources.ConnectDB
             }
             return ketqua; // Trả về giá trị số
         }
+        public MySqlDataReader GetDataReader(string sql)
+        {
+            MySqlDataReader reader = null; // Biến để lưu MySqlDataReader
+            try
+            {
+                Connect(); // Mở kết nối với MySQL
+                MySqlCommand cmd = new MySqlCommand(sql, con); // Tạo lệnh SQL
+                reader = cmd.ExecuteReader(); // Thực hiện lệnh và trả về MySqlDataReader
+            }
+            catch (Exception ex) // Nếu có lỗi xảy ra
+            {
+                Console.WriteLine("Lỗi khi lấy dữ liệu: " + ex.Message); // In ra thông báo lỗi
+            }
+            // Không đóng kết nối ở đây, vì chúng ta cần kết nối mở để đọc dữ liệu
+            return reader; // Trả về MySqlDataReader
+        }
+
+        // Phương pháp đóng MySqlDataReader và kết nối
+        public void CloseDataReader(MySqlDataReader reader)
+        {
+            if (reader != null && !reader.IsClosed)
+            {
+                reader.Close(); // Đóng MySqlDataReader
+            }
+            Disconnect(); // Đóng kết nối sau khi đọc xong
+        }
     }
 }

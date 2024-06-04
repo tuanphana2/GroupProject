@@ -7,20 +7,29 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GroupProject.Sources.ManageStaff.Functions
+namespace GroupProject.Sources.ManageStaff
 {
 
 
-    public partial class ViewStaff
+    public partial class AlertsManagement
     {
 
         /// <summary>
-        /// dl_Staff control.
+        /// alertsDropDown control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList dl_Staff;
+        protected global::System.Web.UI.WebControls.DropDownList alertsDropDown;
+
+        /// <summary>
+        /// alertGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView alertGridView;
     }
 }

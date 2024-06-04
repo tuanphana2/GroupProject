@@ -14,20 +14,8 @@
                 <td class="auto-style1">
                     <asp:Button ID="Bt_Add" runat="server" Text="+ Add new staff" OnClick="Bt_Add_Click" />
                 </td>
-                <td>
-                    <asp:Button ID="Bt_View" runat="server" Text="View" OnClick="Bt_View_Click" />
-                </td>
                 <td class="auto-style2">
                     <asp:Button ID="Bt_Delete" runat="server" Text="Delete" OnClick="Bt_Delete_Click" />
-                </td>
-                <td>
-                    <asp:Button ID="Bt_Import" runat="server" Text="Import" OnClick="Bt_Import_Click" />
-                </td>
-                <td>
-                    <asp:Button ID="Bt_Export" runat="server" Text="Export" OnClick="Bt_Export_Click" />
-                </td>
-                <td>
-                    <asp:Button ID="Bt_Print" runat="server" Text="Print" OnClick="Bt_Print_Click" />
                 </td>
             </tr>
             <!-- Thêm hàng lọc -->

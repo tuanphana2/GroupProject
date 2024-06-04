@@ -11,11 +11,18 @@ namespace GroupProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             // Kiểm tra xem người dùng đã đăng nhập chưa
             if (Session["tdn"] == null)
             {
                 // Nếu chưa đăng nhập, chuyển hướng đến trang đăng nhập
                 Response.Redirect("~/Sources/Login.aspx");
+=======
+            if (!IsPostBack)
+            {
+                if (Session["tdn"] == null)
+                    Response.Redirect("~/Sources/Login.aspx");
+>>>>>>> GỐC
             }
         }
     }

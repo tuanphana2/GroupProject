@@ -15,6 +15,18 @@ namespace GroupProject.Sources
     {
 
         /// <summary>
+<<<<<<< HEAD
+=======
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
+        /// <summary>
+>>>>>>> GỐC
         /// txtTDN control.
         /// </summary>
         /// <remarks>
@@ -24,6 +36,7 @@ namespace GroupProject.Sources
         protected global::System.Web.UI.WebControls.TextBox txtTDN;
 
         /// <summary>
+<<<<<<< HEAD
         /// lbtbNhapTDN control.
         /// </summary>
         /// <remarks>
@@ -33,6 +46,8 @@ namespace GroupProject.Sources
         protected global::System.Web.UI.WebControls.Label lbtbNhapTDN;
 
         /// <summary>
+=======
+>>>>>>> GỐC
         /// txtMK control.
         /// </summary>
         /// <remarks>
@@ -42,6 +57,7 @@ namespace GroupProject.Sources
         protected global::System.Web.UI.WebControls.TextBox txtMK;
 
         /// <summary>
+<<<<<<< HEAD
         /// lbtbMK control.
         /// </summary>
         /// <remarks>
@@ -51,6 +67,8 @@ namespace GroupProject.Sources
         protected global::System.Web.UI.WebControls.Label lbtbMK;
 
         /// <summary>
+=======
+>>>>>>> GỐC
         /// lbthongbao control.
         /// </summary>
         /// <remarks>
@@ -67,6 +85,7 @@ namespace GroupProject.Sources
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btDangNhap;
+<<<<<<< HEAD
 
         /// <summary>
         /// lnkForgotPassword control.
@@ -85,5 +104,7 @@ namespace GroupProject.Sources
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lnkCreateAccount;
+=======
+>>>>>>> GỐC
     }
 }

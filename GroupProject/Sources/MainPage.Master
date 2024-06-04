@@ -4,6 +4,7 @@
 <html>
 <head runat="server">
     <meta charset="utf-8" />
+<<<<<<< HEAD
     <title>My Website</title>
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
     <link rel="stylesheet" type="text/css" href="<%= ResolveUrl("~/Display/css/MasterStyle.css") %>" />
@@ -50,9 +51,68 @@
         .main-content {
             margin-left: 220px; /* Adjust this based on the width of your sidebar */
             padding: 20px;
+=======
+    <title>Master Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+>>>>>>> GỐC
         }
+
+        #sidebar {
+            width: 220px;
+            background-color: #2c3e50;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .logo {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-link {
+            display: block;
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+            .sidebar-link:hover {
+                background-color: #34495e;
+                cursor: pointer;
+            }
+
+        .sidebar-dropdown {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            background-color: #34495e;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+        }
+
+            .sidebar-dropdown option {
+                background-color: #2c3e50;
+                color: white;
+            }
+
+            .sidebar-dropdown:hover {
+                background-color: #34495e;
+            }
     </style>
 
+<<<<<<< HEAD
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 
 
@@ -131,5 +191,60 @@
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
 
+=======
+    <link rel="icon" href="~/Display/images/z5474281508104_c2ddc4d66cc00af7eea85fe22a9ead69.jpg" type="image/gif" />
+    <link href="~/Assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="~/Assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Assets/css/style.css" rel="stylesheet" />
+    <link href="~/Assets/css/responsive.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="display: flex; height: 100vh;">
+            <!-- Sidebar -->
+            <div id="sidebar">
+                <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/Display/images/z5474281508104_c2ddc4d66cc00af7eea85fe22a9ead69.jpg" CssClass="logo" />
+                <asp:LinkButton ID="LinkHomePage" runat="server" OnClick="LinkHomePage_Click" Text="Home Page" CssClass="sidebar-link"></asp:LinkButton>
+                <asp:LinkButton ID="LinkManageStaff" runat="server" OnClick="LinkManageStaff_Click" Text="Manage Staff" CssClass="sidebar-link"></asp:LinkButton>
+                <asp:DropDownList ID="HRManagement" runat="server" OnSelectedIndexChanged="HRManagement_SelectedIndexChanged" CssClass="sidebar-dropdown" AutoPostBack="true">
+                    <asp:ListItem Text="Overview" Value="SalaryOverview" Selected="True"></asp:ListItem>
+                    <asp:ListItem Text="Income Overview" Value="IncomeOverview"></asp:ListItem>
+                    <asp:ListItem Text="Vacation Overview" Value="VacationOverview"></asp:ListItem>
+                    <asp:ListItem Text="Average Benefit Costs" Value="AverageBenefitCosts"></asp:ListItem>
+                </asp:DropDownList>
+                <asp:LinkButton ID="LinkAlerts" runat="server" OnClick="LinkAlerts_Click" Text="Alerts" CssClass="sidebar-link"></asp:LinkButton>
+                <li>
+                    <% if (Session["tdn"] != null)
+                        { %>
+                    <asp:LinkButton ID="Link_Logout" runat="server" OnClick="Link_Logout_Click">Logout</asp:LinkButton>
+                    <% }
+                    else
+                    { %>
+                    <a href="<%= ResolveUrl("~/Sources/Login.aspx") %>">Login</a>
+                    <% } %>
+                </li>
+            </div>
+            <!-- Main Content Area -->
+            <div style="flex-grow: 1; padding: 20px;">
+                <!-- Your main content goes here -->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+    <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh; color: white; background-color: #111111">
+    </div>
+    <!-- footer section -->
+    <script type="text/javascript" src="~/Assets/js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="~/Assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Assets/js/custom.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+>>>>>>> GỐC
 </body>
 </html>

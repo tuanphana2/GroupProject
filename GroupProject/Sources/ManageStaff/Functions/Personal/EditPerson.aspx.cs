@@ -14,6 +14,9 @@ namespace GroupProject.Sources.ManageStaff.Functions
         {
             if (!IsPostBack)
             {
+                string tdn = Session["tdn"] + "";
+                if (tdn == "")
+                    Response.Redirect("~/Sources/Login.aspx");
                 LoadDataIntoFields();
                 LoadPayRates();
                 LoadBenefitPlan();
@@ -79,8 +82,8 @@ namespace GroupProject.Sources.ManageStaff.Functions
 
                 // Nạp dữ liệu vào các trường của bảng Employee
                 txt_EN.Text = row["Employee Number"].ToString();
-                ddl_PR.SelectedValue = row["Pay Rate"].ToString(); // Nếu PayRate là Text
-                txt_PRID.Text = row["Pay Rates_idPay Rates"].ToString();
+                txt_PR.Text = row["Pay Rate"].ToString(); // Nếu PayRate là Text
+                ddl_PRID.SelectedValue = row["Pay Rates_idPay Rates"].ToString();
                 txt_VD.Text = row["Vacation Days"].ToString();
                 txt_PTD.Text = row["Paid To Date"].ToString();
                 txt_PLY.Text = row["Paid Last Year"].ToString();
@@ -94,10 +97,10 @@ namespace GroupProject.Sources.ManageStaff.Functions
         private void LoadPayRates()
         {
             string sqlpr = "select * from mydb.`pay rates`;";
-            ddl_PR.DataSource = con.GetData(sqlpr);
-            ddl_PR.DataTextField = "Pay Rate Name";
-            ddl_PR.DataValueField = "idPay Rates";
-            ddl_PR.DataBind();
+            ddl_PRID.DataSource = con.GetData(sqlpr);
+            ddl_PRID.DataTextField = "Pay Rate Name";
+            ddl_PRID.DataValueField = "idPay Rates";
+            ddl_PRID.DataBind();
         }
 
         private void LoadBenefitPlan()
@@ -115,7 +118,7 @@ namespace GroupProject.Sources.ManageStaff.Functions
             string adr1 = txt_Adr1.Text + "", adr2 = txt_Adr2.Text + "", city = txt_City.Text + "", country = txt_Country.Text + "", zip = txt_Zip.Text + "";
             string gender = ddl_Gentle.Text + "", phone = txt_Phone.Text + "", email = txt_Email.Text + "", ms = txt_MS.Text + "";
             string eth = txt_Ethnicity.Text + "", shs = txt_Shareholder.Text + "", bpid = ddl_Benefit.Text + "";
-            string eN = txt_EN.Text + "", pR = ddl_PR.SelectedValue + "", pRID = txt_PRID.Text + "", vD = txt_VD.Text + "", pTD = txt_PTD.Text + "", pLY = txt_PLY.Text + "";
+            string eN = txt_EN.Text + "", pR = ddl_PRID.SelectedValue + "", pRID =  txt_PR.Text + "", vD = txt_VD.Text + "", pTD = txt_PTD.Text + "", pLY = txt_PLY.Text + "";
 
             string rawDate = datePicker.Text;
             DateTime parsedDate;

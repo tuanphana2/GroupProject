@@ -7,128 +7,110 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GroupProject.Sources.ManageStaff.Functions.WorkingTime
+namespace GroupProject.Sources.ManageStaff
 {
 
 
-    public partial class EditWorkingTime
+    public partial class VacationDay
     {
 
         /// <summary>
-        /// lb_EWTID control.
+        /// Bt_Add control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_EWTID;
+        protected global::System.Web.UI.WebControls.Button Bt_Add;
 
         /// <summary>
-        /// lbtb_EWTID control.
+        /// Bt_Delete control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbtb_EWTID;
+        protected global::System.Web.UI.WebControls.Button Bt_Delete;
 
         /// <summary>
-        /// lb_EID control.
+        /// ddl_Shareholder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_EID;
+        protected global::System.Web.UI.WebControls.DropDownList ddl_Shareholder;
 
         /// <summary>
-        /// txt_EID control.
+        /// bt_submitS control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_EID;
+        protected global::System.Web.UI.WebControls.Button bt_submitS;
 
         /// <summary>
-        /// lb_YW control.
+        /// ddl_Gender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_YW;
+        protected global::System.Web.UI.WebControls.DropDownList ddl_Gender;
 
         /// <summary>
-        /// txt_YW control.
+        /// bt_submitG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_YW;
+        protected global::System.Web.UI.WebControls.Button bt_submitG;
 
         /// <summary>
-        /// lb_MW control.
+        /// ddl_Ethnicity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_MW;
+        protected global::System.Web.UI.WebControls.DropDownList ddl_Ethnicity;
 
         /// <summary>
-        /// txt_MW control.
+        /// bt_submitE control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_MW;
+        protected global::System.Web.UI.WebControls.Button bt_submitE;
 
         /// <summary>
-        /// lb_NDAOWPM control.
+        /// ddl_TypeOfWork control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_NDAOWPM;
+        protected global::System.Web.UI.WebControls.DropDownList ddl_TypeOfWork;
 
         /// <summary>
-        /// txt_NDAOWPM control.
+        /// bt_TOW control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_NDAOWPM;
+        protected global::System.Web.UI.WebControls.Button bt_TOW;
 
         /// <summary>
-        /// lb_TNVWDPM control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_TNVWDPM;
-
-        /// <summary>
-        /// txt_TNVWDPM control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_TNVWDPM;
-
-        /// <summary>
-        /// bt_Update control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button bt_Update;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

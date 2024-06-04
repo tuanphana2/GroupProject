@@ -15,6 +15,9 @@ namespace GroupProject.Sources.ManageStaff
         {
             if (!IsPostBack)
             {
+                string tdn = Session["tdn"] + "";
+                if (tdn == "")
+                    Response.Redirect("~/Sources/Login.aspx");
                 BindGrid();
 
             }
@@ -30,11 +33,6 @@ namespace GroupProject.Sources.ManageStaff
         protected void Bt_Add_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Sources/ManageStaff/Functions/Personal/AddPerson.aspx");
-        }
-
-        protected void Bt_View_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/Sources/ManageStaff/Functions/Personal/ViewPerson.aspx");
         }
 
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -74,6 +72,7 @@ namespace GroupProject.Sources.ManageStaff
             int result = connect.ExecuteQuery(sql);
             return result > 0;
         }
+<<<<<<< HEAD
 
         protected void Bt_Import_Click(object sender, EventArgs e)
         {
@@ -92,5 +91,7 @@ namespace GroupProject.Sources.ManageStaff
 
 
 
+=======
+>>>>>>> GỐC
     }
 }
